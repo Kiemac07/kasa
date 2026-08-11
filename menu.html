@@ -10,30 +10,21 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Menu | KASA Belle Isle</title>
+    <title>Shop | KASA Belle Isle</title>
 
     <meta
         name="description"
-        content="Browse KASA Belle Isle's product categories."
+        content="Shop KASA Belle Isle. Browse drinks, snacks, confectionary, groceries and more."
     >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap"
         rel="stylesheet"
     >
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -41,21 +32,53 @@
 <body>
 
 
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
 <header class="site-header">
 
-    <div class="header-inner">
+    <div class="header-container">
 
-        <a href="index.html" class="brand">
+        <a href="index.html" class="logo">
 
-            <span class="brand-main">
+            <span class="logo-main">
                 KASA
             </span>
 
-            <span class="brand-sub">
+            <span class="logo-location">
                 BELLE ISLE
             </span>
 
         </a>
+
+
+        <nav class="desktop-nav">
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a
+                href="menu.html"
+                class="active"
+            >
+                SHOP
+            </a>
+
+            <a href="index.html#about">
+                ABOUT
+            </a>
+
+            <a href="index.html#reviews">
+                REVIEWS
+            </a>
+
+            <a href="index.html#location">
+                FIND US
+            </a>
+
+        </nav>
 
 
         <a
@@ -87,28 +110,30 @@
 
 
 
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
 <div
-    class="menu-overlay"
-    id="menuOverlay"
+    class="mobile-menu-overlay"
+    id="mobileMenuOverlay"
 ></div>
 
 
-
 <aside
-    class="side-menu"
-    id="sideMenu"
-    aria-hidden="true"
+    class="mobile-menu"
+    id="mobileMenu"
 >
 
-    <div class="side-menu-header">
+    <div class="mobile-menu-top">
 
-        <a href="index.html" class="brand">
+        <a href="index.html" class="logo">
 
-            <span class="brand-main">
+            <span class="logo-main">
                 KASA
             </span>
 
-            <span class="brand-sub">
+            <span class="logo-location">
                 BELLE ISLE
             </span>
 
@@ -116,8 +141,8 @@
 
 
         <button
-            class="menu-close"
-            id="menuClose"
+            class="mobile-menu-close"
+            id="mobileMenuClose"
             aria-label="Close navigation menu"
         >
             ×
@@ -126,82 +151,113 @@
     </div>
 
 
+    <div class="mobile-menu-links">
 
-    <div class="side-menu-content">
-
-        <p class="menu-label">
-            BROWSE
-        </p>
+        <span class="mobile-menu-label">
+            NAVIGATION
+        </span>
 
 
-        <a
-            href="index.html"
-            class="side-link"
-        >
-            Home
+        <a href="index.html">
+            HOME
         </a>
 
-
-        <a
-            href="menu.html"
-            class="side-link"
-        >
-            All Categories
-        </a>
-
-
-        <a
-            href="contact.html"
-            class="side-link"
-        >
-            Contact
-        </a>
-
-
-        <div class="menu-divider"></div>
-
-
-        <p class="menu-label">
+        <a href="menu.html">
             SHOP
-        </p>
-
-
-        <a href="alcohol.html" class="side-link">
-            Alcohol
         </a>
 
-        <a href="drinks.html" class="side-link">
-            Drinks
+        <a href="index.html#about">
+            ABOUT
         </a>
 
-        <a href="confectionary.html" class="side-link">
-            Confectionary
+        <a href="index.html#reviews">
+            REVIEWS
         </a>
 
-        <a href="snacks.html" class="side-link">
-            Snacks
-        </a>
-
-        <a href="groceries.html" class="side-link">
-            Groceries
-        </a>
-
-        <a href="smoking.html" class="side-link">
-            Smoking
+        <a href="index.html#location">
+            FIND US
         </a>
 
 
-        <div class="menu-divider"></div>
+        <span class="mobile-menu-label category-label">
+            SHOP BY CATEGORY
+        </span>
+
+
+        <a href="alcohol.html">
+            ALCOHOL
+        </a>
+
+        <a href="soft-drinks.html">
+            SOFT DRINKS
+        </a>
+
+        <a href="energy-drinks.html">
+            ENERGY DRINKS
+        </a>
+
+        <a href="confectionary.html">
+            CONFECTIONARY
+        </a>
+
+        <a href="crisps-snacks.html">
+            CRISPS & SNACKS
+        </a>
+
+        <a href="bakery.html">
+            BAKERY
+        </a>
+
+        <a href="cereals.html">
+            CEREALS
+        </a>
+
+        <a href="coffee.html">
+            COFFEE
+        </a>
+
+        <a href="tea-hot-drinks.html">
+            TEA & HOT DRINKS
+        </a>
+
+        <a href="tobacco.html">
+            TOBACCO
+        </a>
+
+        <a href="smoking-accessories.html">
+            SMOKING ACCESSORIES
+        </a>
+
+        <a href="juices-cartons.html">
+            JUICES & CARTONS
+        </a>
+
+        <a href="groceries.html">
+            GROCERIES
+        </a>
+
+        <a href="household-essentials.html">
+            HOUSEHOLD & ESSENTIALS
+        </a>
+
+        <a href="multipacks-bulk.html">
+            MULTIPACKS & BULK
+        </a>
 
 
         <a
             href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
             target="_blank"
             rel="noopener noreferrer"
-            class="side-deliveroo"
+            class="mobile-deliveroo"
         >
-            OPEN DELIVEROO
-            <span>↗</span>
+
+            ORDER ON DELIVEROO
+
+            <span>
+                →
+            </span>
+
         </a>
 
     </div>
@@ -211,28 +267,40 @@
 
 
 <!-- =====================================================
-     HERO
+     MAIN
 ===================================================== -->
 
-<section class="page-hero">
+<main>
 
-    <div class="page-hero-inner">
 
-        <p class="eyebrow">
-            KASA BELLE ISLE
-        </p>
+<!-- =====================================================
+     SHOP HERO
+===================================================== -->
+
+<section class="category-page-hero menu-hero">
+
+    <div class="section-container">
+
+
+        <span class="small-label">
+            KASA BELLE ISLE · ONLINE SHOP
+        </span>
 
 
         <h1>
-            Browse
-            <br>
-            <em>our range.</em>
+
+            SHOP
+
+            <span>
+                KASA.
+            </span>
+
         </h1>
 
 
         <p>
-            Choose a category below to explore what KASA
-            Belle Isle has available.
+            Browse our range of everyday essentials,
+            drinks, snacks, confectionary and more.
         </p>
 
     </div>
@@ -242,256 +310,646 @@
 
 
 <!-- =====================================================
-     CATEGORIES
+     CATEGORY GRID
 ===================================================== -->
 
-<section class="products-section">
+<section class="shop-categories">
 
-    <div class="products-container">
-
-
-        <div class="category-page-heading">
-
-            <p class="eyebrow">
-                SHOP
-            </p>
+    <div class="section-container">
 
 
-            <h2>
-                What are you
-                <em>looking for?</em>
-            </h2>
+        <div class="product-section-header">
+
+            <div>
+
+                <span class="small-label">
+                    BROWSE BY CATEGORY
+                </span>
 
 
-            <p>
-                Select a category to browse the range.
-                When you're ready to buy, individual
-                products take you directly to Deliveroo.
-            </p>
+                <h2>
+
+                    WHAT ARE YOU
+
+                    <span>
+                        LOOKING FOR?
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+            <a
+                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button-red"
+            >
+                ORDER ON DELIVEROO →
+            </a>
 
         </div>
 
 
 
-        <div class="main-category-grid">
+        <div class="category-grid">
 
 
-            <!-- ALCOHOL -->
+            <!-- 01 -->
 
             <a
                 href="alcohol.html"
-                class="main-category-card"
+                class="category-card"
             >
 
-                <span class="main-category-number">
+                <div class="category-number">
                     01
-                </span>
-
-
-                <div class="main-category-icon">
-                    🍷
                 </div>
 
+                <div class="category-icon">
+                    🍺
+                </div>
 
-                <div>
+                <div class="category-card-content">
+
+                    <span>
+                        DRINKS
+                    </span>
 
                     <h3>
-                        Alcohol
+                        ALCOHOL
                     </h3>
 
                     <p>
-                        Spirits, beer, wine and more.
+                        Beer, lager, wine, spirits
+                        and ready-to-drink options.
                     </p>
 
-                    <span>
-                        EXPLORE →
-                    </span>
+                </div>
 
+                <div class="category-arrow">
+                    →
                 </div>
 
             </a>
 
 
 
-            <!-- DRINKS -->
+            <!-- 02 -->
 
             <a
-                href="drinks.html"
-                class="main-category-card"
+                href="soft-drinks.html"
+                class="category-card"
             >
 
-                <span class="main-category-number">
+                <div class="category-number">
                     02
-                </span>
+                </div>
 
-
-                <div class="main-category-icon">
+                <div class="category-icon">
                     🥤
                 </div>
 
+                <div class="category-card-content">
 
-                <div>
+                    <span>
+                        DRINKS
+                    </span>
 
                     <h3>
-                        Drinks
+                        SOFT DRINKS
                     </h3>
 
                     <p>
-                        Soft drinks, energy drinks and more.
+                        Cans, bottles and larger
+                        soft drinks.
                     </p>
 
-                    <span>
-                        EXPLORE →
-                    </span>
+                </div>
 
+                <div class="category-arrow">
+                    →
                 </div>
 
             </a>
 
 
 
-            <!-- CONFECTIONARY -->
+            <!-- 03 -->
+
+            <a
+                href="energy-drinks.html"
+                class="category-card"
+            >
+
+                <div class="category-number">
+                    03
+                </div>
+
+                <div class="category-icon">
+                    ⚡
+                </div>
+
+                <div class="category-card-content">
+
+                    <span>
+                        DRINKS
+                    </span>
+
+                    <h3>
+                        ENERGY DRINKS
+                    </h3>
+
+                    <p>
+                        Energy drinks in cans,
+                        bottles and multipacks.
+                    </p>
+
+                </div>
+
+                <div class="category-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <!-- 04 -->
 
             <a
                 href="confectionary.html"
-                class="main-category-card"
+                class="category-card"
             >
 
-                <span class="main-category-number">
-                    03
-                </span>
-
-
-                <div class="main-category-icon">
-                    🍬
+                <div class="category-number">
+                    04
                 </div>
 
+                <div class="category-icon">
+                    🍫
+                </div>
 
-                <div>
+                <div class="category-card-content">
+
+                    <span>
+                        TREATS
+                    </span>
 
                     <h3>
-                        Confectionary
+                        CONFECTIONARY
                     </h3>
 
                     <p>
-                        Sweets, chocolate and sweet treats.
+                        Chocolate, sweets,
+                        sharing bags and more.
                     </p>
 
-                    <span>
-                        EXPLORE →
-                    </span>
+                </div>
 
+                <div class="category-arrow">
+                    →
                 </div>
 
             </a>
 
 
 
-            <!-- SNACKS -->
+            <!-- 05 -->
 
             <a
-                href="snacks.html"
-                class="main-category-card"
+                href="crisps-snacks.html"
+                class="category-card"
             >
 
-                <span class="main-category-number">
-                    04
-                </span>
+                <div class="category-number">
+                    05
+                </div>
 
-
-                <div class="main-category-icon">
+                <div class="category-icon">
                     🥔
                 </div>
 
+                <div class="category-card-content">
 
-                <div>
+                    <span>
+                        SNACKS
+                    </span>
 
                     <h3>
-                        Snacks
+                        CRISPS & SNACKS
                     </h3>
 
                     <p>
-                        Crisps and savoury snacks.
+                        Crisps, savoury snacks
+                        and sharing options.
                     </p>
 
-                    <span>
-                        EXPLORE →
-                    </span>
+                </div>
 
+                <div class="category-arrow">
+                    →
                 </div>
 
             </a>
 
 
 
-            <!-- GROCERIES -->
+            <!-- 06 -->
+
+            <a
+                href="bakery.html"
+                class="category-card"
+            >
+
+                <div class="category-number">
+                    06
+                </div>
+
+                <div class="category-icon">
+                    🥖
+                </div>
+
+                <div class="category-card-content">
+
+                    <span>
+                        FOOD
+                    </span>
+
+                    <h3>
+                        BAKERY
+                    </h3>
+
+                    <p>
+                        Bakery products available
+                        from KASA.
+                    </p>
+
+                </div>
+
+                <div class="category-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <!-- 07 -->
+
+            <a
+                href="cereals.html"
+                class="category-card"
+            >
+
+                <div class="category-number">
+                    07
+                </div>
+
+                <div class="category-icon">
+                    🥣
+                </div>
+
+                <div class="category-card-content">
+
+                    <span>
+                        BREAKFAST
+                    </span>
+
+                    <h3>
+                        CEREALS
+                    </h3>
+
+                    <p>
+                        Family, kids, indulgent
+                        and multipack cereals.
+                    </p>
+
+                </div>
+
+                <div class="category-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <!-- 08 -->
+
+            <a
+                href="coffee.html"
+                class="category-card"
+            >
+
+                <div class="category-number">
+                    08
+                </div>
+
+                <div class="category-icon">
+                    ☕
+                </div>
+
+                <div class="category-card-content">
+
+                    <span>
+                        HOT DRINKS
+                    </span>
+
+                    <h3>
+                        COFFEE
+                    </h3>
+
+                    <p>
+                        Sachets, jars, refills
+                        and premium coffee.
+                    </p>
+
+                </div>
+
+                <div class="category-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <!-- 09 -->
+
+            <a
+                href="tea-hot-drinks.html"
+                class="category-card"
+            >
+
+                <div class="category-number">
+                    09
+                </div>
+
+                <div class="category-icon">
+                    🫖
+                </div>
+
+                <div class="category-card-content">
+
+                    <span>
+                        HOT DRINKS
+                    </span>
+
+                    <h3>
+                        TEA & HOT DRINKS
+                    </h3>
+
+                    <p>
+                        Tea bags, green tea,
+                        hot chocolate and cocoa.
+                    </p>
+
+                </div>
+
+                <div class="category-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <!-- 10 -->
+
+            <a
+                href="tobacco.html"
+                class="category-card"
+            >
+
+                <div class="category-number">
+                    10
+                </div>
+
+                <div class="category-icon">
+                    🔞
+                </div>
+
+                <div class="category-card-content">
+
+                    <span>
+                        AGE RESTRICTED
+                    </span>
+
+                    <h3>
+                        TOBACCO
+                    </h3>
+
+                    <p>
+                        Tobacco products.
+                        Age restrictions apply.
+                    </p>
+
+                </div>
+
+                <div class="category-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <!-- 11 -->
+
+            <a
+                href="smoking-accessories.html"
+                class="category-card"
+            >
+
+                <div class="category-number">
+                    11
+                </div>
+
+                <div class="category-icon">
+                    📄
+                </div>
+
+                <div class="category-card-content">
+
+                    <span>
+                        ACCESSORIES
+                    </span>
+
+                    <h3>
+                        SMOKING ACCESSORIES
+                    </h3>
+
+                    <p>
+                        Papers, tips, filters,
+                        lighters and accessories.
+                    </p>
+
+                </div>
+
+                <div class="category-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <!-- 12 -->
+
+            <a
+                href="juices-cartons.html"
+                class="category-card"
+            >
+
+                <div class="category-number">
+                    12
+                </div>
+
+                <div class="category-icon">
+                    🧃
+                </div>
+
+                <div class="category-card-content">
+
+                    <span>
+                        DRINKS
+                    </span>
+
+                    <h3>
+                        JUICES & CARTONS
+                    </h3>
+
+                    <p>
+                        Juices, cartons and
+                        larger drinks.
+                    </p>
+
+                </div>
+
+                <div class="category-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <!-- 13 -->
 
             <a
                 href="groceries.html"
-                class="main-category-card"
+                class="category-card"
             >
 
-                <span class="main-category-number">
-                    05
-                </span>
+                <div class="category-number">
+                    13
+                </div>
 
-
-                <div class="main-category-icon">
+                <div class="category-icon">
                     🛒
                 </div>
 
+                <div class="category-card-content">
 
-                <div>
+                    <span>
+                        FOOD
+                    </span>
 
                     <h3>
-                        Groceries
+                        GROCERIES
                     </h3>
 
                     <p>
-                        Everyday essentials and groceries.
+                        Everyday food and
+                        cupboard essentials.
                     </p>
 
-                    <span>
-                        EXPLORE →
-                    </span>
+                </div>
 
+                <div class="category-arrow">
+                    →
                 </div>
 
             </a>
 
 
 
-            <!-- SMOKING -->
+            <!-- 14 -->
 
             <a
-                href="smoking.html"
-                class="main-category-card"
+                href="household-essentials.html"
+                class="category-card"
             >
 
-                <span class="main-category-number">
-                    06
-                </span>
-
-
-                <div class="main-category-icon">
-                    🚬
+                <div class="category-number">
+                    14
                 </div>
 
+                <div class="category-icon">
+                    🏠
+                </div>
 
-                <div>
+                <div class="category-card-content">
+
+                    <span>
+                        HOME
+                    </span>
 
                     <h3>
-                        Smoking
+                        HOUSEHOLD & ESSENTIALS
                     </h3>
 
                     <p>
-                        Smoking accessories and products.
+                        Useful household products
+                        and everyday essentials.
                     </p>
 
+                </div>
+
+                <div class="category-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+
+            <!-- 15 -->
+
+            <a
+                href="multipacks-bulk.html"
+                class="category-card"
+            >
+
+                <div class="category-number">
+                    15
+                </div>
+
+                <div class="category-icon">
+                    📦
+                </div>
+
+                <div class="category-card-content">
+
                     <span>
-                        EXPLORE →
+                        STOCK UP
                     </span>
 
+                    <h3>
+                        MULTIPACKS & BULK
+                    </h3>
+
+                    <p>
+                        Larger packs, drinks,
+                        snacks and more.
+                    </p>
+
+                </div>
+
+                <div class="category-arrow">
+                    →
                 </div>
 
             </a>
@@ -509,20 +967,26 @@
      DELIVEROO CTA
 ===================================================== -->
 
-<section class="deliveroo-section">
+<section class="shop-deliveroo">
 
-    <div class="deliveroo-inner">
+    <div class="section-container shop-deliveroo-inner">
+
 
         <div>
 
-            <p class="eyebrow">
+            <span class="small-label">
                 READY TO ORDER?
-            </p>
+            </span>
 
 
             <h2>
-                Shop KASA
-                <em>on Deliveroo.</em>
+
+                SHOP ON
+
+                <span>
+                    DELIVEROO.
+                </span>
+
             </h2>
 
         </div>
@@ -532,18 +996,17 @@
             href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
             target="_blank"
             rel="noopener noreferrer"
-            class="deliveroo-button"
+            class="button button-white"
         >
-
-            ORDER NOW
-
-            <span>↗</span>
-
+            ORDER NOW →
         </a>
 
     </div>
 
 </section>
+
+
+</main>
 
 
 
@@ -553,18 +1016,21 @@
 
 <footer class="site-footer">
 
-    <div class="footer-inner">
+    <div class="section-container footer-grid">
 
 
         <div class="footer-brand">
 
-            <a href="index.html" class="brand">
+            <a
+                href="index.html"
+                class="logo"
+            >
 
-                <span class="brand-main">
+                <span class="logo-main">
                     KASA
                 </span>
 
-                <span class="brand-sub">
+                <span class="logo-location">
                     BELLE ISLE
                 </span>
 
@@ -579,83 +1045,84 @@
         </div>
 
 
-
         <div class="footer-column">
 
-            <p class="footer-title">
+            <strong>
                 SHOP
-            </p>
+            </strong>
+
+            <a href="menu.html">
+                All Categories
+            </a>
 
             <a href="alcohol.html">
                 Alcohol
             </a>
 
-            <a href="drinks.html">
-                Drinks
+            <a href="soft-drinks.html">
+                Soft Drinks
+            </a>
+
+            <a href="energy-drinks.html">
+                Energy Drinks
             </a>
 
             <a href="confectionary.html">
                 Confectionary
             </a>
 
-            <a href="snacks.html">
-                Snacks
-            </a>
-
         </div>
-
 
 
         <div class="footer-column">
 
-            <p class="footer-title">
+            <strong>
                 MORE
-            </p>
+            </strong>
 
-            <a href="groceries.html">
-                Groceries
+            <a href="index.html#about">
+                About
             </a>
 
-            <a href="smoking.html">
-                Smoking
+            <a href="index.html#reviews">
+                Reviews
             </a>
 
-            <a href="contact.html">
-                Contact
+            <a href="index.html#location">
+                Find Us
             </a>
 
         </div>
 
 
-
         <div class="footer-column">
 
-            <p class="footer-title">
+            <strong>
                 ORDER
-            </p>
+            </strong>
 
             <a
                 href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Deliveroo ↗
+                Deliveroo
             </a>
 
         </div>
 
+
     </div>
 
 
-
-    <div class="footer-bottom">
+    <div class="section-container footer-bottom">
 
         <span>
-            © 2026 KASA Belle Isle
+            © 2026 KASA BELLE ISLE
         </span>
 
         <span>
-            Belle Isle · Leeds
+            BELLE ISLE · LEEDS
         </span>
 
     </div>

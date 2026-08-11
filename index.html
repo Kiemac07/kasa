@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -10,35 +9,23 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>KASA Belle Isle | Leeds</title>
+    <title>KASA Belle Isle | Local Convenience Store</title>
 
     <meta
         name="description"
-        content="KASA Belle Isle — your local convenience store in Belle Isle, Leeds."
+        content="KASA Belle Isle - your local convenience store in Belle Isle, Leeds."
     >
 
-    <!-- GOOGLE FONTS -->
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap"
         rel="stylesheet"
     >
 
-    <!-- WEBSITE CSS -->
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -51,26 +38,54 @@
 
 <header class="site-header">
 
-    <div class="header-inner">
-
+    <div class="header-container">
 
         <!-- LOGO -->
 
         <a
             href="index.html"
-            class="brand"
+            class="logo"
         >
 
-            <span class="brand-main">
+            <span class="logo-main">
                 KASA
             </span>
 
-            <span class="brand-sub">
+            <span class="logo-location">
                 BELLE ISLE
             </span>
 
         </a>
 
+
+        <!-- DESKTOP NAV -->
+
+        <nav class="desktop-nav">
+
+            <a
+                href="index.html"
+                class="active"
+            >
+                HOME
+            </a>
+
+            <a href="menu.html">
+                SHOP
+            </a>
+
+            <a href="#about">
+                ABOUT
+            </a>
+
+            <a href="#reviews">
+                REVIEWS
+            </a>
+
+            <a href="#location">
+                FIND US
+            </a>
+
+        </nav>
 
 
         <!-- ORDER BUTTON -->
@@ -85,8 +100,7 @@
         </a>
 
 
-
-        <!-- HAMBURGER -->
+        <!-- MOBILE MENU BUTTON -->
 
         <button
             class="menu-toggle"
@@ -108,40 +122,32 @@
 
 
 <!-- =====================================================
-     MENU OVERLAY
+     MOBILE MENU
 ===================================================== -->
 
 <div
-    class="menu-overlay"
-    id="menuOverlay"
+    class="mobile-menu-overlay"
+    id="mobileMenuOverlay"
 ></div>
 
 
-
-<!-- =====================================================
-     SIDE MENU
-===================================================== -->
-
 <aside
-    class="side-menu"
-    id="sideMenu"
-    aria-hidden="true"
+    class="mobile-menu"
+    id="mobileMenu"
 >
 
-
-    <div class="side-menu-header">
-
+    <div class="mobile-menu-top">
 
         <a
             href="index.html"
-            class="brand"
+            class="logo"
         >
 
-            <span class="brand-main">
+            <span class="logo-main">
                 KASA
             </span>
 
-            <span class="brand-sub">
+            <span class="logo-location">
                 BELLE ISLE
             </span>
 
@@ -149,8 +155,8 @@
 
 
         <button
-            class="menu-close"
-            id="menuClose"
+            class="mobile-menu-close"
+            id="mobileMenuClose"
             aria-label="Close navigation menu"
         >
             ×
@@ -159,115 +165,108 @@
     </div>
 
 
+    <div class="mobile-menu-links">
 
-    <div class="side-menu-content">
-
-
-        <p class="menu-label">
-            BROWSE
-        </p>
+        <span class="mobile-menu-label">
+            NAVIGATION
+        </span>
 
 
-        <a
-            href="index.html"
-            class="side-link"
-        >
-            Home
+        <a href="index.html">
+            HOME
         </a>
 
-
-        <a
-            href="menu.html"
-            class="side-link"
-        >
-            All Categories
-        </a>
-
-
-        <a
-            href="contact.html"
-            class="side-link"
-        >
-            Contact
-        </a>
-
-
-
-        <div class="menu-divider"></div>
-
-
-
-        <p class="menu-label">
+        <a href="menu.html">
             SHOP
-        </p>
+        </a>
 
+        <a href="#about">
+            ABOUT
+        </a>
 
-        <a
-            href="alcohol.html"
-            class="side-link"
-        >
-            Alcohol
+        <a href="#reviews">
+            REVIEWS
+        </a>
+
+        <a href="#location">
+            FIND US
         </a>
 
 
-        <a
-            href="drinks.html"
-            class="side-link"
-        >
-            Drinks
+        <span class="mobile-menu-label category-label">
+            SHOP BY CATEGORY
+        </span>
+
+
+        <a href="alcohol.html">
+            ALCOHOL
         </a>
 
-
-        <a
-            href="confectionary.html"
-            class="side-link"
-        >
-            Confectionary
+        <a href="soft-drinks.html">
+            SOFT DRINKS
         </a>
 
-
-        <a
-            href="snacks.html"
-            class="side-link"
-        >
-            Snacks
+        <a href="energy-drinks.html">
+            ENERGY DRINKS
         </a>
 
-
-        <a
-            href="groceries.html"
-            class="side-link"
-        >
-            Groceries
+        <a href="confectionary.html">
+            CONFECTIONARY
         </a>
 
-
-        <a
-            href="smoking.html"
-            class="side-link"
-        >
-            Smoking
+        <a href="crisps-snacks.html">
+            CRISPS & SNACKS
         </a>
 
+        <a href="bakery.html">
+            BAKERY
+        </a>
 
+        <a href="cereals.html">
+            CEREALS
+        </a>
 
-        <div class="menu-divider"></div>
+        <a href="coffee.html">
+            COFFEE
+        </a>
 
+        <a href="tea-hot-drinks.html">
+            TEA & HOT DRINKS
+        </a>
+
+        <a href="tobacco.html">
+            TOBACCO
+        </a>
+
+        <a href="smoking-accessories.html">
+            SMOKING ACCESSORIES
+        </a>
+
+        <a href="juices-cartons.html">
+            JUICES & CARTONS
+        </a>
+
+        <a href="groceries.html">
+            GROCERIES
+        </a>
+
+        <a href="household-essentials.html">
+            HOUSEHOLD & ESSENTIALS
+        </a>
+
+        <a href="multipacks-bulk.html">
+            MULTIPACKS & BULK
+        </a>
 
 
         <a
             href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
             target="_blank"
             rel="noopener noreferrer"
-            class="side-deliveroo"
+            class="mobile-deliveroo"
         >
-
-            OPEN DELIVEROO
-
-            <span>
-                ↗
-            </span>
-
+            ORDER ON DELIVEROO
+            <span>→</span>
         </a>
 
     </div>
@@ -277,57 +276,258 @@
 
 
 <!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
      HERO
 ===================================================== -->
 
 <section class="home-hero">
 
-
-    <div class="home-hero-content">
-
-
-        <p class="eyebrow">
-            KASA BELLE ISLE · LEEDS
-        </p>
+    <div class="home-hero-container">
 
 
-        <h1>
-            Your local
-            <br>
-            <em>convenience store.</em>
-        </h1>
+        <div class="home-hero-content">
+
+            <span class="small-label">
+                KASA BELLE ISLE
+            </span>
 
 
-        <p class="hero-description">
-            Everyday essentials, drinks, snacks,
-            confectionary, groceries and more —
-            right here in Belle Isle.
-        </p>
+            <h1>
+
+                YOUR LOCAL
+
+                <span>
+                    CONVENIENCE STORE
+                </span>
+
+            </h1>
 
 
-        <div class="hero-buttons">
+            <p>
+
+                Everyday essentials, drinks, snacks,
+                groceries and more — right here in
+                Belle Isle.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a
+                    href="menu.html"
+                    class="button button-red"
+                >
+                    SHOP ONLINE
+                </a>
+
+
+                <a
+                    href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-outline"
+                >
+                    ORDER ON DELIVEROO
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HERO IMAGE AREA -->
+
+        <div class="hero-image">
+
+            <!--
+                REPLACE THIS AREA WITH THE
+                KASA BELLE ISLE STORE PHOTO
+                WHEN YOU HAVE IT.
+            -->
+
+            <div class="image-placeholder">
+
+                <strong>
+                    KASA
+                </strong>
+
+                <span>
+                    BELLE ISLE
+                </span>
+
+                <small>
+                    STORE IMAGE
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUICK SHOP
+===================================================== -->
+
+<section class="quick-shop">
+
+    <div class="section-container">
+
+
+        <div class="section-intro">
+
+            <span class="small-label">
+                SHOP KASA
+            </span>
+
+            <h2>
+                EVERYTHING YOU
+                <span>
+                    NEED.
+                </span>
+            </h2>
+
+            <p>
+                Browse our most popular departments
+                and find exactly what you're looking for.
+            </p>
+
+        </div>
+
+
+
+        <div class="quick-shop-grid">
 
 
             <a
-                href="menu.html"
-                class="primary-button"
+                href="alcohol.html"
+                class="quick-card"
             >
 
-                ORDER NOW
-
-                <span>
-                    →
+                <span class="quick-number">
+                    01
                 </span>
+
+                <span class="quick-icon">
+                    🍺
+                </span>
+
+                <h3>
+                    Alcohol
+                </h3>
+
+                <p>
+                    Beer, lager, cider, wine,
+                    spirits and RTDs.
+                </p>
+
+                <strong>
+                    VIEW →
+                </strong>
 
             </a>
 
 
+
             <a
-                href="#about"
-                class="secondary-button"
+                href="soft-drinks.html"
+                class="quick-card"
             >
 
-                DISCOVER KASA
+                <span class="quick-number">
+                    02
+                </span>
+
+                <span class="quick-icon">
+                    🥤
+                </span>
+
+                <h3>
+                    Soft Drinks
+                </h3>
+
+                <p>
+                    Fizzy drinks, bottles
+                    and everyday favourites.
+                </p>
+
+                <strong>
+                    VIEW →
+                </strong>
+
+            </a>
+
+
+
+            <a
+                href="confectionary.html"
+                class="quick-card"
+            >
+
+                <span class="quick-number">
+                    03
+                </span>
+
+                <span class="quick-icon">
+                    🍫
+                </span>
+
+                <h3>
+                    Confectionary
+                </h3>
+
+                <p>
+                    Chocolate, sweets,
+                    sharing bags and more.
+                </p>
+
+                <strong>
+                    VIEW →
+                </strong>
+
+            </a>
+
+
+
+            <a
+                href="crisps-snacks.html"
+                class="quick-card"
+            >
+
+                <span class="quick-number">
+                    04
+                </span>
+
+                <span class="quick-icon">
+                    🍿
+                </span>
+
+                <h3>
+                    Crisps & Snacks
+                </h3>
+
+                <p>
+                    Crisps, sharing snacks
+                    and quick treats.
+                </p>
+
+                <strong>
+                    VIEW →
+                </strong>
 
             </a>
 
@@ -335,8 +535,18 @@
         </div>
 
 
-    </div>
+        <a
+            href="menu.html"
+            class="view-all-categories"
+        >
+            VIEW ALL 15 CATEGORIES
+            <span>
+                →
+            </span>
+        </a>
 
+
+    </div>
 
 </section>
 
@@ -347,21 +557,17 @@
 ===================================================== -->
 
 <section
-    class="about-section"
+    class="home-about"
     id="about"
 >
 
+    <div class="section-container about-grid">
 
-    <div class="about-container">
-
-
-        <!-- STORE IMAGE -->
 
         <div class="about-image">
 
-
             <!--
-                REPLACE THIS DIV WITH YOUR STORE PHOTO.
+                REPLACE THIS WITH STORE PHOTO
 
                 Example:
 
@@ -371,344 +577,69 @@
                 >
             -->
 
-
             <div class="image-placeholder">
 
+                <strong>
+                    YOUR STORE PHOTO
+                </strong>
 
                 <span>
-                    KASA
+                    ADD IMAGE HERE
                 </span>
 
-
-                <p>
-                    STORE PHOTO
-                </p>
-
-
-                <small>
-                    Add your store image here
-                </small>
-
-
             </div>
-
 
         </div>
 
 
-
-        <!-- ABOUT TEXT -->
 
         <div class="about-content">
 
-
-            <p class="eyebrow">
-                ABOUT KASA
-            </p>
+            <span class="small-label">
+                ABOUT KASA BELLE ISLE
+            </span>
 
 
             <h2>
-                Your local
-                <em>convenience store.</em>
+
+                YOUR LOCAL
+
+                <span>
+                    SHOP.
+                </span>
+
             </h2>
 
 
             <p>
-                KASA Belle Isle is your local convenience
-                store serving the Belle Isle area of Leeds.
-                Whether you're picking up a few essentials,
-                grabbing a drink or looking for a quick
-                snack, KASA is here for your everyday needs.
+
+                KASA Belle Isle is your local
+                convenience store, providing
+                everyday essentials, drinks,
+                snacks, groceries and more
+                for the local community.
+
             </p>
 
 
             <p>
-                Browse our categories online and, when
-                you're ready to order, head straight to
-                Deliveroo.
+
+                Whether you're picking up a few
+                essentials or ordering from home,
+                KASA is here when you need us.
+
             </p>
 
 
             <a
-                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="primary-button"
+                href="menu.html"
+                class="text-button"
             >
-
-                ORDER NOW
-
+                BROWSE THE SHOP
                 <span>
-                    ↗
+                    →
                 </span>
-
             </a>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     REVIEWS
-===================================================== -->
-
-<section class="reviews-section">
-
-
-    <div class="reviews-container">
-
-
-        <div class="reviews-heading">
-
-
-            <p class="eyebrow">
-                WHAT PEOPLE SAY
-            </p>
-
-
-            <h2>
-                Loved by the
-                <em>local community.</em>
-            </h2>
-
-
-        </div>
-
-
-
-        <div class="reviews-grid">
-
-
-            <!-- REVIEW 1 -->
-
-            <article class="review-card">
-
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-
-                <p class="review-text">
-                    "Great local shop with a really good
-                    selection. Always convenient when you
-                    need something quickly."
-                </p>
-
-
-                <div class="review-author">
-
-                    <span class="review-initial">
-                        A
-                    </span>
-
-                    <div>
-
-                        <strong>
-                            Local Customer
-                        </strong>
-
-                        <small>
-                            KASA Belle Isle
-                        </small>
-
-                    </div>
-
-                </div>
-
-
-            </article>
-
-
-
-            <!-- REVIEW 2 -->
-
-            <article class="review-card">
-
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-
-                <p class="review-text">
-                    "Friendly service and plenty of choice.
-                    Handy having everything you need nearby."
-                </p>
-
-
-                <div class="review-author">
-
-                    <span class="review-initial">
-                        J
-                    </span>
-
-                    <div>
-
-                        <strong>
-                            Local Customer
-                        </strong>
-
-                        <small>
-                            KASA Belle Isle
-                        </small>
-
-                    </div>
-
-                </div>
-
-
-            </article>
-
-
-
-            <!-- REVIEW 3 -->
-
-            <article class="review-card">
-
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-
-                <p class="review-text">
-                    "Really convenient and easy to order
-                    from online. Good local shop."
-                </p>
-
-
-                <div class="review-author">
-
-                    <span class="review-initial">
-                        M
-                    </span>
-
-                    <div>
-
-                        <strong>
-                            Local Customer
-                        </strong>
-
-                        <small>
-                            KASA Belle Isle
-                        </small>
-
-                    </div>
-
-                </div>
-
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     LOCATION / GOOGLE MAPS
-===================================================== -->
-
-<section class="location-section">
-
-
-    <div class="location-container">
-
-
-        <div class="location-heading">
-
-
-            <p class="eyebrow">
-                FIND KASA
-            </p>
-
-
-            <h2>
-                Come and see
-                <em>us.</em>
-            </h2>
-
-
-            <p>
-                Find KASA Belle Isle on Belle Isle Road
-                in Leeds.
-            </p>
-
-
-        </div>
-
-
-
-        <!-- GOOGLE MAP -->
-
-        <div class="location-map">
-
-
-            <iframe
-                src="https://www.google.com/maps?q=KASA%20Belle%20Isle%2C%20278%20Belle%20Isle%20Road%2C%20Leeds%20LS10%203QJ&output=embed"
-                width="100%"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="KASA Belle Isle Google Maps location"
-            >
-            </iframe>
-
-
-        </div>
-
-
-
-        <!-- ADDRESS / DIRECTIONS -->
-
-        <div class="location-bottom">
-
-
-            <div>
-
-                <span>
-                    ADDRESS
-                </span>
-
-
-                <strong>
-                    278 Belle Isle Road
-                    <br>
-                    Belle Isle, Leeds
-                    <br>
-                    LS10 3QJ
-                </strong>
-
-            </div>
-
-
-            <a
-                href="https://www.google.com/maps/search/?api=1&query=KASA%20Belle%20Isle%2C%20278%20Belle%20Isle%20Road%2C%20Leeds%20LS10%203QJ"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="map-button"
-            >
-
-                GET DIRECTIONS
-
-                <span>
-                    ↗
-                </span>
-
-            </a>
-
 
         </div>
 
@@ -722,49 +653,251 @@
      ORDER CTA
 ===================================================== -->
 
-<section class="deliveroo-section">
+<section class="order-section">
 
-
-    <div class="deliveroo-inner">
+    <div class="section-container order-inner">
 
 
         <div>
 
-
-            <p class="eyebrow">
+            <span class="small-label">
                 READY TO ORDER?
-            </p>
+            </span>
 
 
             <h2>
-                Shop KASA
-                <em>on Deliveroo.</em>
+
+                GET IT DELIVERED
+
+                <span>
+                    TODAY.
+                </span>
+
             </h2>
 
-
         </div>
-
 
 
         <a
             href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
             target="_blank"
             rel="noopener noreferrer"
-            class="deliveroo-button"
+            class="button button-white"
         >
-
-            ORDER NOW
-
+            ORDER ON DELIVEROO
             <span>
-                ↗
+                →
             </span>
-
         </a>
-
 
     </div>
 
 </section>
+
+
+
+<!-- =====================================================
+     REVIEWS
+===================================================== -->
+
+<section
+    class="reviews-section"
+    id="reviews"
+>
+
+    <div class="section-container">
+
+
+        <div class="section-intro">
+
+            <span class="small-label">
+                LOCAL CUSTOMERS
+            </span>
+
+            <h2>
+
+                WHAT PEOPLE
+
+                <span>
+                    SAY.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="review-grid">
+
+
+            <article class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+
+                <p>
+
+                    "Great local shop and always
+                    handy when you need something
+                    quickly."
+
+                </p>
+
+
+                <strong>
+                    Local customer
+                </strong>
+
+            </article>
+
+
+
+            <article class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+
+                <p>
+
+                    "Good selection of drinks,
+                    snacks and everyday essentials."
+
+                </p>
+
+
+                <strong>
+                    Local customer
+                </strong>
+
+            </article>
+
+
+
+            <article class="review-card">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+
+                <p>
+
+                    "Really convenient and easy
+                    to order from Deliveroo."
+
+                </p>
+
+
+                <strong>
+                    Local customer
+                </strong>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LOCATION
+===================================================== -->
+
+<section
+    class="location-section"
+    id="location"
+>
+
+    <div class="section-container">
+
+
+        <div class="section-intro">
+
+            <span class="small-label">
+                FIND US
+            </span>
+
+
+            <h2>
+
+                COME AND
+
+                <span>
+                    SEE US.
+                </span>
+
+            </h2>
+
+
+            <p>
+                Find KASA Belle Isle in
+                Belle Isle, Leeds.
+            </p>
+
+        </div>
+
+
+
+        <div class="map-container">
+
+            <iframe
+                src="https://www.google.com/maps?q=278%20Belle%20Isle%20Road%2C%20Leeds%2C%20LS10%203QJ&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+        </div>
+
+
+
+        <div class="location-bottom">
+
+
+            <div>
+
+                <span>
+                    ADDRESS
+                </span>
+
+
+                <strong>
+
+                    278 Belle Isle Road,
+                    Leeds, LS10 3QJ
+
+                </strong>
+
+            </div>
+
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=278+Belle+Isle+Road+Leeds+LS10+3QJ"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button-red"
+            >
+                GET DIRECTIONS
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
 
 
 
@@ -774,25 +907,21 @@
 
 <footer class="site-footer">
 
+    <div class="section-container footer-grid">
 
-    <div class="footer-inner">
-
-
-        <!-- BRAND -->
 
         <div class="footer-brand">
 
-
             <a
                 href="index.html"
-                class="brand"
+                class="logo"
             >
 
-                <span class="brand-main">
+                <span class="logo-main">
                     KASA
                 </span>
 
-                <span class="brand-sub">
+                <span class="logo-location">
                     BELLE ISLE
                 </span>
 
@@ -800,91 +929,77 @@
 
 
             <p>
+
                 Your local convenience store
                 in Belle Isle, Leeds.
-            </p>
 
+            </p>
 
         </div>
 
 
 
-        <!-- SHOP -->
-
         <div class="footer-column">
 
-
-            <p class="footer-title">
+            <strong>
                 SHOP
-            </p>
+            </strong>
 
+            <a href="menu.html">
+                All Categories
+            </a>
 
             <a href="alcohol.html">
                 Alcohol
             </a>
 
-
-            <a href="drinks.html">
-                Drinks
+            <a href="soft-drinks.html">
+                Soft Drinks
             </a>
-
 
             <a href="confectionary.html">
                 Confectionary
             </a>
 
-
-            <a href="snacks.html">
-                Snacks
+            <a href="crisps-snacks.html">
+                Crisps & Snacks
             </a>
-
 
         </div>
 
 
 
-        <!-- MORE -->
-
         <div class="footer-column">
 
+            <strong>
+                INFORMATION
+            </strong>
 
-            <p class="footer-title">
-                MORE
-            </p>
-
-
-            <a href="groceries.html">
-                Groceries
+            <a href="#about">
+                About
             </a>
 
-
-            <a href="smoking.html">
-                Smoking
+            <a href="#reviews">
+                Reviews
             </a>
 
-
-            <a href="contact.html">
-                Contact
+            <a href="#location">
+                Find Us
             </a>
-
 
             <a href="menu.html">
-                Full Menu
+                Shop Online
             </a>
-
 
         </div>
 
 
 
-        <!-- ORDER -->
-
         <div class="footer-column">
 
-
-            <p class="footer-title">
+            <strong>
                 ORDER
-            </p>
+            </strong>
 
 
             <a
@@ -892,14 +1007,13 @@
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Deliveroo ↗
+                Deliveroo
             </a>
 
 
-            <a href="menu.html">
-                Browse Categories
+            <a href="#location">
+                Directions
             </a>
-
 
         </div>
 
@@ -907,35 +1021,23 @@
     </div>
 
 
-
-    <!-- FOOTER BOTTOM -->
-
-    <div class="footer-bottom">
-
+    <div class="section-container footer-bottom">
 
         <span>
-            © 2026 KASA Belle Isle
+            © 2026 KASA BELLE ISLE
         </span>
-
 
         <span>
-            Belle Isle · Leeds
+            BELLE ISLE · LEEDS
         </span>
-
 
     </div>
-
 
 </footer>
 
 
 
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
 <script src="script.js"></script>
-
 
 </body>
 

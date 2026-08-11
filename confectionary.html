@@ -14,30 +14,17 @@
 
     <meta
         name="description"
-        content="Browse confectionary available from KASA Belle Isle."
+        content="Browse chocolate, sweets and confectionary at KASA Belle Isle."
     >
-
-    <!-- GOOGLE FONTS -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap"
         rel="stylesheet"
     >
 
-    <!-- WEBSITE CSS -->
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -51,40 +38,61 @@
 
 <header class="site-header">
 
-    <div class="header-inner">
-
-
-        <!-- LOGO -->
+    <div class="header-container">
 
         <a
             href="index.html"
-            class="brand"
+            class="logo"
         >
 
-            <span class="brand-main">
+            <span class="logo-main">
                 KASA
             </span>
 
-            <span class="brand-sub">
+            <span class="logo-location">
                 BELLE ISLE
             </span>
 
         </a>
 
 
+        <nav class="desktop-nav">
 
-        <!-- DESKTOP BUTTON -->
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a
+                href="menu.html"
+                class="active"
+            >
+                SHOP
+            </a>
+
+            <a href="index.html#about">
+                ABOUT
+            </a>
+
+            <a href="index.html#reviews">
+                REVIEWS
+            </a>
+
+            <a href="index.html#location">
+                FIND US
+            </a>
+
+        </nav>
+
 
         <a
-            href="#products"
+            href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+            target="_blank"
+            rel="noopener noreferrer"
             class="header-order"
         >
-            BROWSE CONFECTIONARY
+            ORDER NOW
         </a>
 
-
-
-        <!-- HAMBURGER -->
 
         <button
             class="menu-toggle"
@@ -106,42 +114,32 @@
 
 
 <!-- =====================================================
-     MENU OVERLAY
+     MOBILE MENU
 ===================================================== -->
 
 <div
-    class="menu-overlay"
-    id="menuOverlay"
+    class="mobile-menu-overlay"
+    id="mobileMenuOverlay"
 ></div>
 
 
-
-<!-- =====================================================
-     SIDE MENU
-===================================================== -->
-
 <aside
-    class="side-menu"
-    id="sideMenu"
-    aria-hidden="true"
+    class="mobile-menu"
+    id="mobileMenu"
 >
 
-
-    <!-- MENU HEADER -->
-
-    <div class="side-menu-header">
-
+    <div class="mobile-menu-top">
 
         <a
             href="index.html"
-            class="brand menu-brand"
+            class="logo"
         >
 
-            <span class="brand-main">
+            <span class="logo-main">
                 KASA
             </span>
 
-            <span class="brand-sub">
+            <span class="logo-location">
                 BELLE ISLE
             </span>
 
@@ -149,8 +147,8 @@
 
 
         <button
-            class="menu-close"
-            id="menuClose"
+            class="mobile-menu-close"
+            id="mobileMenuClose"
             aria-label="Close navigation menu"
         >
             ×
@@ -159,117 +157,111 @@
     </div>
 
 
+    <div class="mobile-menu-links">
 
-    <!-- MENU CONTENT -->
-
-    <div class="side-menu-content">
-
-
-        <p class="menu-label">
-            BROWSE
-        </p>
+        <span class="mobile-menu-label">
+            NAVIGATION
+        </span>
 
 
-        <a
-            href="index.html"
-            class="side-link"
-        >
-            Home
+        <a href="index.html">
+            HOME
         </a>
 
-
-        <a
-            href="index.html#about"
-            class="side-link"
-        >
-            About KASA
-        </a>
-
-
-        <a
-            href="menu.html"
-            class="side-link"
-        >
-            All Categories
-        </a>
-
-
-
-        <div class="menu-divider"></div>
-
-
-
-        <p class="menu-label">
+        <a href="menu.html">
             SHOP
-        </p>
+        </a>
 
+        <a href="index.html#about">
+            ABOUT
+        </a>
 
-        <a
-            href="alcohol.html"
-            class="side-link"
-        >
-            Alcohol
+        <a href="index.html#reviews">
+            REVIEWS
+        </a>
+
+        <a href="index.html#location">
+            FIND US
         </a>
 
 
-        <a
-            href="drinks.html"
-            class="side-link"
-        >
-            Drinks
+        <span class="mobile-menu-label category-label">
+            SHOP BY CATEGORY
+        </span>
+
+
+        <a href="alcohol.html">
+            ALCOHOL
         </a>
 
-
-        <a
-            href="confectionary.html"
-            class="side-link"
-        >
-            Confectionary
+        <a href="soft-drinks.html">
+            SOFT DRINKS
         </a>
 
-
-        <a
-            href="snacks.html"
-            class="side-link"
-        >
-            Snacks
+        <a href="energy-drinks.html">
+            ENERGY DRINKS
         </a>
 
-
-        <a
-            href="groceries.html"
-            class="side-link"
-        >
-            Groceries
+        <a href="confectionary.html">
+            CONFECTIONARY
         </a>
 
-
-        <a
-            href="smoking.html"
-            class="side-link"
-        >
-            Smoking
+        <a href="crisps-snacks.html">
+            CRISPS & SNACKS
         </a>
 
+        <a href="bakery.html">
+            BAKERY
+        </a>
 
+        <a href="cereals.html">
+            CEREALS
+        </a>
 
-        <div class="menu-divider"></div>
+        <a href="coffee.html">
+            COFFEE
+        </a>
 
+        <a href="tea-hot-drinks.html">
+            TEA & HOT DRINKS
+        </a>
 
+        <a href="tobacco.html">
+            TOBACCO
+        </a>
 
-        <!-- DELIVEROO -->
+        <a href="smoking-accessories.html">
+            SMOKING ACCESSORIES
+        </a>
+
+        <a href="juices-cartons.html">
+            JUICES & CARTONS
+        </a>
+
+        <a href="groceries.html">
+            GROCERIES
+        </a>
+
+        <a href="household-essentials.html">
+            HOUSEHOLD & ESSENTIALS
+        </a>
+
+        <a href="multipacks-bulk.html">
+            MULTIPACKS & BULK
+        </a>
+
 
         <a
             href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
             target="_blank"
             rel="noopener noreferrer"
-            class="side-deliveroo"
+            class="mobile-deliveroo"
         >
 
-            OPEN DELIVEROO
+            ORDER ON DELIVEROO
 
             <span>
-                ↗
+                →
             </span>
 
         </a>
@@ -281,33 +273,49 @@
 
 
 <!-- =====================================================
-     PAGE HERO
+     MAIN
 ===================================================== -->
 
-<section class="page-hero">
+<main>
 
 
-    <div class="page-hero-inner">
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="category-page-hero">
+
+    <div class="section-container">
 
 
-        <p class="eyebrow">
-            KASA BELLE ISLE
-        </p>
+        <a
+            href="menu.html"
+            class="back-link"
+        >
+            ← BACK TO SHOP
+        </a>
+
+
+        <span class="small-label">
+            KASA BELLE ISLE · SHOP
+        </span>
 
 
         <h1>
-            Confectionary
-            <br>
-            <em>& sweet treats.</em>
+
+            CONFECTIONARY
+
+            <span>
+                & TREATS.
+            </span>
+
         </h1>
 
 
         <p>
-            Browse the confectionary selection available
-            from KASA Belle Isle, including sweets,
-            chocolate and other treats.
+            Chocolate, sweets, sharing bags,
+            multipacks and plenty of treats.
         </p>
-
 
     </div>
 
@@ -316,198 +324,151 @@
 
 
 <!-- =====================================================
-     PRODUCTS
+     CONFECTIONARY INTRO
 ===================================================== -->
 
-<section
-    class="products-section"
-    id="products"
->
+<section class="product-section">
+
+    <div class="section-container">
 
 
-    <div class="products-container">
+        <div class="product-section-header">
+
+            <div>
+
+                <span class="small-label">
+                    SWEETS & CHOCOLATE
+                </span>
+
+                <h2>
+
+                    FIND YOUR
+
+                    <span>
+                        FAVOURITE.
+                    </span>
+
+                </h2>
+
+            </div>
 
 
-        <!-- SECTION HEADING -->
-
-        <div class="category-page-heading">
-
-
-            <p class="eyebrow">
-                CONFECTIONARY
-            </p>
-
-
-            <h2>
-                Pick a treat.
-            </h2>
-
-
-            <p>
-                Choose from the confectionary categories
-                below. Selecting a product will take you
-                to KASA Belle Isle on Deliveroo to order.
-            </p>
-
+            <a
+                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button-red"
+            >
+                ORDER ON DELIVEROO →
+            </a>
 
         </div>
 
 
+        <!-- SEARCH / FILTER WILL BE ACTIVATED LATER -->
 
-        <!-- =================================================
-             PRODUCT GRID
-        ================================================== -->
+        <div class="product-tools">
 
-        <div class="products-grid">
+            <div class="search-box">
 
+                <span>⌕</span>
 
+                <input
+                    type="search"
+                    placeholder="Search confectionary..."
+                    aria-label="Search confectionary"
+                    disabled
+                >
 
-            <!-- =============================================
-                 SWEETS
-            ============================================== -->
-
-            <a
-                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="product-card"
-            >
+            </div>
 
 
-                <div class="product-image">
-                    🍬
-                </div>
+            <select disabled>
+
+                <option>
+                    FILTER
+                </option>
+
+            </select>
 
 
-                <h3>
-                    Sweets
-                </h3>
+            <select disabled>
+
+                <option>
+                    SORT
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+</section>
 
 
-                <p>
-                    Browse the available sweets and
-                    sweet treats.
-                </p>
+
+<!-- =====================================================
+     CHOCOLATE
+===================================================== -->
+
+<section class="product-list-section">
+
+    <div class="section-container">
 
 
-                <span class="product-card-button">
-                    VIEW ON DELIVEROO →
+        <div class="product-category-title">
+
+            <span class="small-label">
+                CONFECTIONARY · 01
+            </span>
+
+
+            <h2>
+
+                CHOCOLATE
+
+                <span>
+                    BARS.
                 </span>
 
+            </h2>
 
-            </a>
-
-
-
-            <!-- =============================================
-                 CHOCOLATE
-            ============================================== -->
-
-            <a
-                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="product-card"
-            >
+        </div>
 
 
-                <div class="product-image">
+        <div class="product-grid">
+
+
+            <div class="product-empty">
+
+                <div class="product-empty-icon">
                     🍫
                 </div>
 
 
                 <h3>
-                    Chocolate
+                    Chocolate Bars
                 </h3>
 
 
                 <p>
-                    Browse chocolate bars, treats and
-                    other chocolate products.
+                    Individual chocolate bars
+                    will be displayed here using
+                    KASA's exact product catalogue.
                 </p>
 
 
-                <span class="product-card-button">
+                <a
+                    href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-red"
+                >
                     VIEW ON DELIVEROO →
-                </span>
+                </a>
 
-
-            </a>
-
-
-
-            <!-- =============================================
-                 GUM & MINTS
-            ============================================== -->
-
-            <a
-                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="product-card"
-            >
-
-
-                <div class="product-image">
-                    🍃
-                </div>
-
-
-                <h3>
-                    Gum & Mints
-                </h3>
-
-
-                <p>
-                    Chewing gum, mints and smaller
-                    confectionery treats.
-                </p>
-
-
-                <span class="product-card-button">
-                    VIEW ON DELIVEROO →
-                </span>
-
-
-            </a>
-
-
-
-            <!-- =============================================
-                 SHARE BAGS
-            ============================================== -->
-
-            <a
-                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="product-card"
-            >
-
-
-                <div class="product-image">
-                    🍭
-                </div>
-
-
-                <h3>
-                    Sharing Treats
-                </h3>
-
-
-                <p>
-                    Larger bags and sharing-sized
-                    confectionery.
-                </p>
-
-
-                <span class="product-card-button">
-                    VIEW ON DELIVEROO →
-                </span>
-
-
-            </a>
-
+            </div>
 
 
         </div>
@@ -519,52 +480,329 @@
 
 
 <!-- =====================================================
-     DELIVEROO CTA
+     SHARING CHOCOLATE
 ===================================================== -->
 
-<section class="deliveroo-section">
+<section class="product-list-section grey-section">
+
+    <div class="section-container">
 
 
-    <div class="deliveroo-inner">
+        <div class="product-category-title">
 
-
-        <div>
-
-
-            <p class="eyebrow">
-                READY TO ORDER?
-            </p>
+            <span class="small-label">
+                CONFECTIONARY · 02
+            </span>
 
 
             <h2>
-                Find your
-                <em>favourite.</em>
+
+                SHARING
+
+                <span>
+                    CHOCOLATE.
+                </span>
+
             </h2>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <div class="product-empty">
+
+                <div class="product-empty-icon">
+                    🍫
+                </div>
+
+
+                <h3>
+                    Sharing Blocks & Bags
+                </h3>
+
+
+                <p>
+                    Sharing chocolate bars,
+                    blocks and larger packs.
+                </p>
+
+
+                <a
+                    href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-red"
+                >
+                    VIEW ON DELIVEROO →
+                </a>
+
+            </div>
 
 
         </div>
 
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SWEETS
+===================================================== -->
+
+<section class="product-list-section">
+
+    <div class="section-container">
+
+
+        <div class="product-category-title">
+
+            <span class="small-label">
+                CONFECTIONARY · 03
+            </span>
+
+
+            <h2>
+
+                SWEETS &
+
+                <span>
+                    GUM.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <div class="product-empty">
+
+                <div class="product-empty-icon">
+                    🍬
+                </div>
+
+
+                <h3>
+                    Sweets & Gum
+                </h3>
+
+
+                <p>
+                    Sweets, chewing gum and
+                    other confectionary treats.
+                </p>
+
+
+                <a
+                    href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-red"
+                >
+                    VIEW ON DELIVEROO →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SHARING BAGS
+===================================================== -->
+
+<section class="product-list-section grey-section">
+
+    <div class="section-container">
+
+
+        <div class="product-category-title">
+
+            <span class="small-label">
+                CONFECTIONARY · 04
+            </span>
+
+
+            <h2>
+
+                SHARING
+
+                <span>
+                    BAGS.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <div class="product-empty">
+
+                <div class="product-empty-icon">
+                    🍭
+                </div>
+
+
+                <h3>
+                    Sharing Sweets
+                </h3>
+
+
+                <p>
+                    Larger sharing bags and
+                    family-sized sweets.
+                </p>
+
+
+                <a
+                    href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-red"
+                >
+                    VIEW ON DELIVEROO →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MULTIPACKS
+===================================================== -->
+
+<section class="product-list-section">
+
+    <div class="section-container">
+
+
+        <div class="product-category-title">
+
+            <span class="small-label">
+                CONFECTIONARY · 05
+            </span>
+
+
+            <h2>
+
+                CHOCOLATE
+
+                <span>
+                    MULTIPACKS.
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <div class="product-empty">
+
+                <div class="product-empty-icon">
+                    📦
+                </div>
+
+
+                <h3>
+                    Chocolate Multipacks
+                </h3>
+
+
+                <p>
+                    Multipacks, duos and
+                    grab bags.
+                </p>
+
+
+                <a
+                    href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-red"
+                >
+                    VIEW ON DELIVEROO →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ORDER CTA
+===================================================== -->
+
+<section class="shop-deliveroo">
+
+    <div class="section-container shop-deliveroo-inner">
+
+
+        <div>
+
+            <span class="small-label">
+                READY FOR A TREAT?
+            </span>
+
+
+            <h2>
+
+                ORDER YOUR
+
+                <span>
+                    FAVOURITES.
+                </span>
+
+            </h2>
+
+        </div>
 
 
         <a
             href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
             target="_blank"
             rel="noopener noreferrer"
-            class="deliveroo-button"
+            class="button button-white"
         >
-
-            OPEN DELIVEROO
-
-            <span>
-                ↗
-            </span>
-
+            ORDER ON DELIVEROO →
         </a>
-
 
     </div>
 
 </section>
+
+
+</main>
 
 
 
@@ -574,25 +812,21 @@
 
 <footer class="site-footer">
 
+    <div class="section-container footer-grid">
 
-    <div class="footer-inner">
-
-
-        <!-- BRAND -->
 
         <div class="footer-brand">
 
-
             <a
                 href="index.html"
-                class="brand"
+                class="logo"
             >
 
-                <span class="brand-main">
+                <span class="logo-main">
                     KASA
                 </span>
 
-                <span class="brand-sub">
+                <span class="logo-location">
                     BELLE ISLE
                 </span>
 
@@ -604,102 +838,72 @@
                 in Belle Isle, Leeds.
             </p>
 
-
         </div>
 
 
-
-        <!-- SHOP -->
-
         <div class="footer-column">
 
-
-            <p class="footer-title">
+            <strong>
                 SHOP
-            </p>
+            </strong>
 
+            <a href="menu.html">
+                All Categories
+            </a>
 
             <a href="alcohol.html">
                 Alcohol
             </a>
 
-
-            <a href="drinks.html">
-                Drinks
+            <a href="soft-drinks.html">
+                Soft Drinks
             </a>
 
+            <a href="energy-drinks.html">
+                Energy Drinks
+            </a>
 
             <a href="confectionary.html">
                 Confectionary
             </a>
 
-
-            <a href="snacks.html">
-                Snacks
-            </a>
-
-
         </div>
 
 
-
-        <!-- MORE -->
-
         <div class="footer-column">
 
-
-            <p class="footer-title">
+            <strong>
                 MORE
-            </p>
+            </strong>
 
-
-            <a href="groceries.html">
-                Groceries
+            <a href="index.html#about">
+                About
             </a>
 
-
-            <a href="smoking.html">
-                Smoking
+            <a href="index.html#reviews">
+                Reviews
             </a>
 
-
-            <a href="contact.html">
-                Contact
+            <a href="index.html#location">
+                Find Us
             </a>
-
-
-            <a href="menu.html">
-                Full Menu
-            </a>
-
 
         </div>
 
 
-
-        <!-- ORDER -->
-
         <div class="footer-column">
 
-
-            <p class="footer-title">
+            <strong>
                 ORDER
-            </p>
-
-
-            <a href="#products">
-                Browse Confectionary
-            </a>
-
+            </strong>
 
             <a
                 href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Deliveroo ↗
+                Deliveroo
             </a>
-
 
         </div>
 
@@ -707,35 +911,23 @@
     </div>
 
 
-
-    <!-- FOOTER BOTTOM -->
-
-    <div class="footer-bottom">
-
+    <div class="section-container footer-bottom">
 
         <span>
-            © 2026 KASA Belle Isle
+            © 2026 KASA BELLE ISLE
         </span>
-
 
         <span>
-            Belle Isle · Leeds
+            BELLE ISLE · LEEDS
         </span>
-
 
     </div>
-
 
 </footer>
 
 
 
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
 <script src="script.js"></script>
-
 
 </body>
 
