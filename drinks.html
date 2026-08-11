@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shop | KASA Belle Isle</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Drinks | KASA Belle Isle</title>
 
     <meta
         name="description"
-        content="Shop KASA Belle Isle. Browse drinks, alcohol, confectionery, snacks, groceries and more."
+        content="Browse drinks available from KASA Belle Isle."
     >
-
-    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet"
     >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
@@ -29,49 +45,45 @@
      HEADER
 ===================================================== -->
 
-<header class="header">
+<header class="site-header">
 
     <div class="header-inner">
 
-        <a href="index.html" class="logo">
-            <span>KASA</span>
-            <small>BELLE ISLE</small>
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <span class="brand-main">
+                KASA
+            </span>
+
+            <span class="brand-sub">
+                BELLE ISLE
+            </span>
+
         </a>
 
 
-        <nav class="nav">
-
-            <a href="index.html">Home</a>
-
-            <a href="menu.html" class="active">Shop</a>
-
-            <a href="drinks.html">Drinks</a>
-
-            <a href="alcohol.html">Alcohol</a>
-
-            <a href="confectionery.html">Confectionery</a>
-
-            <a href="groceries.html">Groceries</a>
-
-            <a href="contact.html">Contact</a>
-
-            <a
-                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
-                target="_blank"
-                class="nav-order"
-            >
-                ORDER NOW
-            </a>
-
-        </nav>
+        <a
+            href="#products"
+            class="header-order"
+        >
+            BROWSE DRINKS
+        </a>
 
 
         <button
-            class="mobile-menu-btn"
-            onclick="toggleMenu()"
-            aria-label="Open menu"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
         >
-            ☰
+
+            <span></span>
+            <span></span>
+            <span></span>
+
         </button>
 
     </div>
@@ -79,55 +91,188 @@
 </header>
 
 
+
 <!-- =====================================================
-     MOBILE NAV
+     MENU OVERLAY
 ===================================================== -->
 
-<div class="mobile-nav" id="mobileNav">
+<div
+    class="menu-overlay"
+    id="menuOverlay"
+></div>
 
-    <a href="index.html">Home</a>
-
-    <a href="menu.html">Shop</a>
-
-    <a href="drinks.html">Drinks</a>
-
-    <a href="alcohol.html">Alcohol</a>
-
-    <a href="confectionery.html">Confectionery</a>
-
-    <a href="groceries.html">Groceries</a>
-
-    <a href="contact.html">Contact</a>
-
-    <a
-        href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
-        target="_blank"
-        class="mobile-order"
-    >
-        ORDER NOW
-    </a>
-
-</div>
 
 
 <!-- =====================================================
-     PAGE HERO
+     SIDE MENU
+===================================================== -->
+
+<aside
+    class="side-menu"
+    id="sideMenu"
+    aria-hidden="true"
+>
+
+
+    <div class="side-menu-header">
+
+        <a
+            href="index.html"
+            class="brand menu-brand"
+        >
+
+            <span class="brand-main">
+                KASA
+            </span>
+
+            <span class="brand-sub">
+                BELLE ISLE
+            </span>
+
+        </a>
+
+
+        <button
+            class="menu-close"
+            id="menuClose"
+            aria-label="Close navigation menu"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+
+    <div class="side-menu-content">
+
+        <p class="menu-label">
+            BROWSE
+        </p>
+
+
+        <a
+            href="index.html"
+            class="side-link"
+        >
+            Home
+        </a>
+
+
+        <a
+            href="index.html#about"
+            class="side-link"
+        >
+            About KASA
+        </a>
+
+
+        <a
+            href="index.html#categories"
+            class="side-link"
+        >
+            All Categories
+        </a>
+
+
+        <div class="menu-divider"></div>
+
+
+        <p class="menu-label">
+            SHOP
+        </p>
+
+
+        <a href="alcohol.html" class="side-link">
+            Alcohol
+        </a>
+
+        <a href="drinks.html" class="side-link">
+            Drinks
+        </a>
+
+        <a href="bakery.html" class="side-link">
+            Bakery
+        </a>
+
+        <a href="chocolate.html" class="side-link">
+            Chocolate
+        </a>
+
+        <a href="snacks.html" class="side-link">
+            Crisps & Snacks
+        </a>
+
+        <a href="sweets.html" class="side-link">
+            Sweets
+        </a>
+
+        <a href="cereals.html" class="side-link">
+            Cereals
+        </a>
+
+        <a href="coffee-tea.html" class="side-link">
+            Coffee & Tea
+        </a>
+
+        <a href="instant.html" class="side-link">
+            Instant Foods
+        </a>
+
+        <a
+            href="smoking-accessories.html"
+            class="side-link"
+        >
+            Smoking Accessories
+        </a>
+
+
+        <div class="menu-divider"></div>
+
+
+        <a
+            href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="side-deliveroo"
+        >
+
+            OPEN DELIVEROO
+
+            <span>↗</span>
+
+        </a>
+
+    </div>
+
+</aside>
+
+
+
+<!-- =====================================================
+     HERO
 ===================================================== -->
 
 <section class="page-hero">
 
     <div class="page-hero-inner">
 
-        <span>SHOP KASA</span>
+        <p class="eyebrow">
+            KASA BELLE ISLE
+        </p>
+
 
         <h1>
-            What are you<br>
-            looking for?
+            Drinks
+            <br>
+            <em>& refreshments.</em>
         </h1>
 
+
         <p>
-            Browse our categories or order the full range
-            directly through Deliveroo.
+            From everyday soft drinks to energy drinks
+            and larger bottles, browse the drink categories
+            available from KASA Belle Isle.
         </p>
 
     </div>
@@ -135,369 +280,701 @@
 </section>
 
 
+
 <!-- =====================================================
-     ORDER NOW
+     DRINK CATEGORIES
 ===================================================== -->
 
-<section class="shop-order">
+<section
+    class="products-section"
+    id="products"
+>
 
-    <div class="shop-order-inner">
+    <div class="products-container">
 
-        <div>
 
-            <span>READY TO ORDER?</span>
+        <div class="category-page-heading">
+
+            <p class="eyebrow">
+                DRINKS RANGE
+            </p>
+
 
             <h2>
-                Get KASA delivered.
+                Choose a category.
             </h2>
 
+
             <p>
-                Browse the full KASA Belle Isle range on Deliveroo
-                and order straight to your door.
+                Select a category to see the products
+                available. Individual products link
+                directly to KASA's live Deliveroo page.
             </p>
 
         </div>
 
 
-        <a
-            href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
-            target="_blank"
-            class="btn btn-white"
-        >
-            ORDER NOW →
-        </a>
+
+        <!-- =================================================
+             CATEGORY GRID
+        ================================================== -->
+
+        <div class="category-grid">
+
+
+
+            <!-- 01 -->
+
+            <a
+                href="#500ml"
+                class="category-card"
+            >
+
+                <span class="category-number">
+                    01
+                </span>
+
+
+                <div class="category-icon">
+                    🥤
+                </div>
+
+
+                <div class="category-info">
+
+                    <h3>
+                        Soft Drinks 500ml
+                    </h3>
+
+
+                    <p>
+                        Single-serving soft drinks
+                        and bottled refreshments.
+                    </p>
+
+
+                    <span class="category-link">
+                        VIEW PRODUCTS →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- 02 -->
+
+            <a
+                href="#2ltr"
+                class="category-card"
+            >
+
+                <span class="category-number">
+                    02
+                </span>
+
+
+                <div class="category-icon">
+                    🧃
+                </div>
+
+
+                <div class="category-info">
+
+                    <h3>
+                        Soft Drinks 2LTR
+                    </h3>
+
+
+                    <p>
+                        Larger bottles for sharing
+                        and keeping at home.
+                    </p>
+
+
+                    <span class="category-link">
+                        VIEW PRODUCTS →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- 03 -->
+
+            <a
+                href="#energy-cans"
+                class="category-card"
+            >
+
+                <span class="category-number">
+                    03
+                </span>
+
+
+                <div class="category-icon">
+                    ⚡
+                </div>
+
+
+                <div class="category-info">
+
+                    <h3>
+                        Energy Drinks Cans
+                    </h3>
+
+
+                    <p>
+                        Energy drinks available
+                        in cans.
+                    </p>
+
+
+                    <span class="category-link">
+                        VIEW PRODUCTS →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- 04 -->
+
+            <a
+                href="#energy-bottles"
+                class="category-card"
+            >
+
+                <span class="category-number">
+                    04
+                </span>
+
+
+                <div class="category-icon">
+                    ⚡
+                </div>
+
+
+                <div class="category-info">
+
+                    <h3>
+                        Energy Drinks Bottles
+                    </h3>
+
+
+                    <p>
+                        Bottled energy drinks
+                        available from KASA.
+                    </p>
+
+
+                    <span class="category-link">
+                        VIEW PRODUCTS →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- 05 -->
+
+            <a
+                href="#cartons"
+                class="category-card"
+            >
+
+                <span class="category-number">
+                    05
+                </span>
+
+
+                <div class="category-icon">
+                    🧃
+                </div>
+
+
+                <div class="category-info">
+
+                    <h3>
+                        1 LTR Cartons
+                    </h3>
+
+
+                    <p>
+                        Larger carton drinks
+                        available from KASA.
+                    </p>
+
+
+                    <span class="category-link">
+                        VIEW PRODUCTS →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- 06 -->
+
+            <a
+                href="#other"
+                class="category-card"
+            >
+
+                <span class="category-number">
+                    06
+                </span>
+
+
+                <div class="category-icon">
+                    🥛
+                </div>
+
+
+                <div class="category-info">
+
+                    <h3>
+                        Other Drinks
+                    </h3>
+
+
+                    <p>
+                        Additional drinks and
+                        refreshments.
+                    </p>
+
+
+                    <span class="category-link">
+                        VIEW PRODUCTS →
+                    </span>
+
+                </div>
+
+            </a>
+
+
+        </div>
 
     </div>
 
 </section>
+
 
 
 <!-- =====================================================
-     CATEGORIES
+     500ML
 ===================================================== -->
 
-<section class="section shop-section">
+<section
+    class="alcohol-product-section"
+    id="500ml"
+>
 
-    <div class="section-heading">
-
-        <span>OUR RANGE</span>
-
-        <h2>
-            Shop by category.
-        </h2>
-
-        <p>
-            Find what you need quickly and easily.
-        </p>
-
-    </div>
+    <div class="products-container">
 
 
-    <div class="shop-category-grid">
+        <div class="product-section-title">
+
+            <span>
+                01 / DRINKS
+            </span>
 
 
-        <!-- DRINKS -->
+            <h2>
+                Soft Drinks 500ml
+            </h2>
 
-        <a href="drinks.html" class="shop-category-card">
+        </div>
 
-            <div class="shop-category-number">
-                01
-            </div>
 
-            <div class="shop-category-icon">
-                🥤
-            </div>
+        <div class="product-subcategory-grid">
 
-            <div class="shop-category-content">
 
-                <h3>Drinks</h3>
+            <!-- PRODUCT -->
 
-                <p>
-                    Soft drinks, energy drinks,
-                    bottled drinks and more.
-                </p>
+            <a
+                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="subcategory-card"
+            >
 
                 <span>
-                    VIEW DRINKS →
+                    SOFT DRINK
                 </span>
 
-            </div>
 
-        </a>
+                <h3>
+                    Browse 500ml Drinks
+                </h3>
 
 
-        <!-- ALCOHOL -->
+                <small>
+                    View on Deliveroo →
+                </small>
 
-        <a href="alcohol.html" class="shop-category-card">
+            </a>
 
-            <div class="shop-category-number">
-                02
-            </div>
 
-            <div class="shop-category-icon">
-                🍺
-            </div>
-
-            <div class="shop-category-content">
-
-                <h3>Alcohol</h3>
-
-                <p>
-                    Beer, lager, cider, wine
-                    and spirits.
-                </p>
-
-                <span>
-                    VIEW ALCOHOL →
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <!-- CONFECTIONERY -->
-
-        <a href="confectionery.html" class="shop-category-card">
-
-            <div class="shop-category-number">
-                03
-            </div>
-
-            <div class="shop-category-icon">
-                🍫
-            </div>
-
-            <div class="shop-category-content">
-
-                <h3>Confectionery</h3>
-
-                <p>
-                    Chocolate, sweets and
-                    delicious treats.
-                </p>
-
-                <span>
-                    VIEW CONFECTIONERY →
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <!-- SNACKS -->
-
-        <a href="snacks.html" class="shop-category-card">
-
-            <div class="shop-category-number">
-                04
-            </div>
-
-            <div class="shop-category-icon">
-                🥔
-            </div>
-
-            <div class="shop-category-content">
-
-                <h3>Crisps & Snacks</h3>
-
-                <p>
-                    Crisps, sharing bags,
-                    nuts and savoury snacks.
-                </p>
-
-                <span>
-                    VIEW SNACKS →
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <!-- GROCERIES -->
-
-        <a href="groceries.html" class="shop-category-card">
-
-            <div class="shop-category-number">
-                05
-            </div>
-
-            <div class="shop-category-icon">
-                🛒
-            </div>
-
-            <div class="shop-category-content">
-
-                <h3>Groceries</h3>
-
-                <p>
-                    Bakery, cereals, coffee,
-                    tea and everyday essentials.
-                </p>
-
-                <span>
-                    VIEW GROCERIES →
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <!-- SMOKING -->
-
-        <a href="smoking.html" class="shop-category-card">
-
-            <div class="shop-category-number">
-                06
-            </div>
-
-            <div class="shop-category-icon">
-                🚬
-            </div>
-
-            <div class="shop-category-content">
-
-                <h3>Smoking Accessories</h3>
-
-                <p>
-                    Papers, filters, lighters
-                    and accessories.
-                </p>
-
-                <span>
-                    VIEW ACCESSORIES →
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <!-- COFFEE & TEA -->
-
-        <a href="groceries.html" class="shop-category-card">
-
-            <div class="shop-category-number">
-                07
-            </div>
-
-            <div class="shop-category-icon">
-                ☕
-            </div>
-
-            <div class="shop-category-content">
-
-                <h3>Coffee & Tea</h3>
-
-                <p>
-                    Coffee, tea and hot drink
-                    essentials.
-                </p>
-
-                <span>
-                    VIEW RANGE →
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <!-- BAKERY -->
-
-        <a href="groceries.html" class="shop-category-card">
-
-            <div class="shop-category-number">
-                08
-            </div>
-
-            <div class="shop-category-icon">
-                🥐
-            </div>
-
-            <div class="shop-category-content">
-
-                <h3>Bakery</h3>
-
-                <p>
-                    Fresh bakery products and
-                    everyday essentials.
-                </p>
-
-                <span>
-                    VIEW BAKERY →
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <!-- CEREALS -->
-
-        <a href="groceries.html" class="shop-category-card">
-
-            <div class="shop-category-number">
-                09
-            </div>
-
-            <div class="shop-category-icon">
-                🥣
-            </div>
-
-            <div class="shop-category-content">
-
-                <h3>Cereals</h3>
-
-                <p>
-                    Breakfast cereals and
-                    everyday breakfast items.
-                </p>
-
-                <span>
-                    VIEW CEREALS →
-                </span>
-
-            </div>
-
-        </a>
-
+        </div>
 
     </div>
 
 </section>
+
+
+
+<!-- =====================================================
+     2LTR
+===================================================== -->
+
+<section
+    class="alcohol-product-section grey"
+    id="2ltr"
+>
+
+    <div class="products-container">
+
+
+        <div class="product-section-title">
+
+            <span>
+                02 / DRINKS
+            </span>
+
+
+            <h2>
+                Soft Drinks 2LTR
+            </h2>
+
+        </div>
+
+
+        <div class="product-subcategory-grid">
+
+
+            <a
+                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="subcategory-card"
+            >
+
+                <span>
+                    LARGE BOTTLES
+                </span>
+
+
+                <h3>
+                    Browse 2LTR Drinks
+                </h3>
+
+
+                <small>
+                    View on Deliveroo →
+                </small>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ENERGY CANS
+===================================================== -->
+
+<section
+    class="alcohol-product-section"
+    id="energy-cans"
+>
+
+    <div class="products-container">
+
+
+        <div class="product-section-title">
+
+            <span>
+                03 / DRINKS
+            </span>
+
+
+            <h2>
+                Energy Drinks Cans
+            </h2>
+
+        </div>
+
+
+        <div class="product-subcategory-grid">
+
+
+            <a
+                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="subcategory-card"
+            >
+
+                <span>
+                    ENERGY
+                </span>
+
+
+                <h3>
+                    Browse Energy Cans
+                </h3>
+
+
+                <small>
+                    View on Deliveroo →
+                </small>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ENERGY BOTTLES
+===================================================== -->
+
+<section
+    class="alcohol-product-section grey"
+    id="energy-bottles"
+>
+
+    <div class="products-container">
+
+
+        <div class="product-section-title">
+
+            <span>
+                04 / DRINKS
+            </span>
+
+
+            <h2>
+                Energy Drinks Bottles
+            </h2>
+
+        </div>
+
+
+        <div class="product-subcategory-grid">
+
+
+            <a
+                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="subcategory-card"
+            >
+
+                <span>
+                    ENERGY
+                </span>
+
+
+                <h3>
+                    Browse Energy Bottles
+                </h3>
+
+
+                <small>
+                    View on Deliveroo →
+                </small>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     1 LTR CARTONS
+===================================================== -->
+
+<section
+    class="alcohol-product-section"
+    id="cartons"
+>
+
+    <div class="products-container">
+
+
+        <div class="product-section-title">
+
+            <span>
+                05 / DRINKS
+            </span>
+
+
+            <h2>
+                1 LTR Cartons
+            </h2>
+
+        </div>
+
+
+        <div class="product-subcategory-grid">
+
+
+            <a
+                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="subcategory-card"
+            >
+
+                <span>
+                    CARTONS
+                </span>
+
+
+                <h3>
+                    Browse 1 LTR Cartons
+                </h3>
+
+
+                <small>
+                    View on Deliveroo →
+                </small>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     OTHER
+===================================================== -->
+
+<section
+    class="alcohol-product-section grey"
+    id="other"
+>
+
+    <div class="products-container">
+
+
+        <div class="product-section-title">
+
+            <span>
+                06 / DRINKS
+            </span>
+
+
+            <h2>
+                Other Drinks
+            </h2>
+
+        </div>
+
+
+        <div class="product-subcategory-grid">
+
+
+            <a
+                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="subcategory-card"
+            >
+
+                <span>
+                    DRINKS
+                </span>
+
+
+                <h3>
+                    View Full Drink Range
+                </h3>
+
+
+                <small>
+                    View on Deliveroo →
+                </small>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
 
 
 <!-- =====================================================
      DELIVEROO CTA
 ===================================================== -->
 
-<section class="final-cta">
+<section class="deliveroo-section">
 
-    <div>
+    <div class="deliveroo-inner">
 
-        <span>
-            FULL RANGE AVAILABLE ONLINE
-        </span>
 
-        <h2>
-            Can't find what<br>
-            you're looking for?
-        </h2>
+        <div>
 
-        <p>
-            Check the full KASA Belle Isle range on Deliveroo.
-        </p>
+            <p class="eyebrow">
+                READY TO ORDER?
+            </p>
+
+
+            <h2>
+                View the live
+                <em>drink selection.</em>
+            </h2>
+
+        </div>
+
 
         <a
             href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
             target="_blank"
-            class="btn btn-red"
+            rel="noopener noreferrer"
+            class="deliveroo-button"
         >
-            ORDER ON DELIVEROO →
+
+            OPEN DELIVEROO
+
+            <span>
+                ↗
+            </span>
+
         </a>
 
     </div>
@@ -505,104 +982,139 @@
 </section>
 
 
+
 <!-- =====================================================
      FOOTER
 ===================================================== -->
 
-<footer>
+<footer class="site-footer">
 
     <div class="footer-inner">
 
+
         <div class="footer-brand">
 
-            <div class="logo footer-logo">
+            <a
+                href="index.html"
+                class="brand"
+            >
 
-                <span>KASA</span>
+                <span class="brand-main">
+                    KASA
+                </span>
 
-                <small>BELLE ISLE</small>
+                <span class="brand-sub">
+                    BELLE ISLE
+                </span>
 
-            </div>
+            </a>
+
 
             <p>
-                Your local convenience store in Belle Isle, Leeds.
+                Your local convenience store
+                in Belle Isle, Leeds.
             </p>
 
         </div>
 
 
-        <div class="footer-column">
-
-            <h4>SHOP</h4>
-
-            <a href="menu.html">All Categories</a>
-
-            <a href="drinks.html">Drinks</a>
-
-            <a href="alcohol.html">Alcohol</a>
-
-            <a href="confectionery.html">Confectionery</a>
-
-            <a href="groceries.html">Groceries</a>
-
-        </div>
-
 
         <div class="footer-column">
 
-            <h4>INFORMATION</h4>
-
-            <a href="contact.html">Contact</a>
-
-            <a href="contact.html">Find Us</a>
-
-            <a
-                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
-                target="_blank"
-            >
-                Deliveroo
-            </a>
-
-        </div>
-
-
-        <div class="footer-column">
-
-            <h4>ORDER</h4>
-
-            <p>
-                Get your KASA order delivered through Deliveroo.
+            <p class="footer-title">
+                SHOP
             </p>
 
-            <a
-                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
-                target="_blank"
-                class="footer-order"
-            >
-                ORDER NOW →
+            <a href="alcohol.html">
+                Alcohol
+            </a>
+
+            <a href="drinks.html">
+                Drinks
+            </a>
+
+            <a href="bakery.html">
+                Bakery
+            </a>
+
+            <a href="chocolate.html">
+                Chocolate
             </a>
 
         </div>
+
+
+
+        <div class="footer-column">
+
+            <p class="footer-title">
+                MORE
+            </p>
+
+            <a href="snacks.html">
+                Crisps & Snacks
+            </a>
+
+            <a href="sweets.html">
+                Sweets
+            </a>
+
+            <a href="cereals.html">
+                Cereals
+            </a>
+
+            <a href="coffee-tea.html">
+                Coffee & Tea
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <p class="footer-title">
+                ORDER
+            </p>
+
+            <a href="#products">
+                Browse Drinks
+            </a>
+
+            <a
+                href="https://deliveroo.co.uk/menu/leeds/middleton/kasa-belle-isle/?utm_medium=affiliate&utm_source=google_maps_link&fulfillment_type=DELIVERY"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Deliveroo ↗
+            </a>
+
+        </div>
+
 
     </div>
 
 
     <div class="footer-bottom">
 
-        <p>
-            © <span class="current-year">2026</span>
-            KASA Belle Isle. All rights reserved.
-        </p>
+        <span>
+            © 2026 KASA Belle Isle
+        </span>
 
-        <p>
-            Belle Isle, Leeds
-        </p>
+        <span>
+            Belle Isle · Leeds
+        </span>
 
     </div>
 
 </footer>
 
 
+
+<!-- JAVASCRIPT -->
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
