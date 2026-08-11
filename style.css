@@ -1,6 +1,6 @@
 /* =========================================================
    KASA BELLE ISLE
-   MAIN WEBSITE STYLESHEET
+   RED / WHITE / DARK GREY DESIGN
 ========================================================= */
 
 
@@ -10,34 +10,33 @@
 
 :root {
 
+    /* MAIN COLOURS */
     --red: #c90000;
-
     --red-dark: #a60000;
-
     --red-light: #fff1f1;
 
-    --black: #111111;
+    /* DARK GREY ACCENT */
+    --dark-grey: #252525;
+    --grey: #3a3a3a;
+    --medium-grey: #666666;
 
-    --dark: #181818;
-
+    /* LIGHT COLOURS */
     --white: #ffffff;
-
-    --off-white: #f7f7f5;
-
-    --grey: #777777;
-
+    --off-white: #f6f6f6;
     --light-grey: #eeeeee;
 
-    --border: #dedede;
-
+    /* TEXT */
+    --black: #111111;
     --muted: #666666;
 
-    --title-font: "Playfair Display", Georgia, serif;
+    /* BORDERS */
+    --border: #dddddd;
 
-    --body-font: "DM Sans", Arial, sans-serif;
+    /* FONTS */
+    --title-font: "Anton", sans-serif;
+    --body-font: "Inter", Arial, sans-serif;
 
     --max-width: 1400px;
-
 }
 
 
@@ -47,9 +46,7 @@
 
 * {
     margin: 0;
-
     padding: 0;
-
     box-sizing: border-box;
 }
 
@@ -73,16 +70,21 @@ body {
 
 
 img {
-    max-width: 100%;
-
     display: block;
+    max-width: 100%;
 }
 
 
 a {
     color: inherit;
-
     text-decoration: none;
+}
+
+
+button,
+input,
+textarea {
+    font-family: var(--body-font);
 }
 
 
@@ -92,21 +94,14 @@ a {
 }
 
 
-button {
-    font-family: inherit;
-}
-
-
 ::selection {
     background: var(--red);
-
     color: white;
 }
 
 
-
 /* =========================================================
-   GLOBAL CONTAINER
+   CONTAINER
 ========================================================= */
 
 .container {
@@ -132,7 +127,12 @@ button {
 
     width: 100%;
 
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(
+        255,
+        255,
+        255,
+        0.97
+    );
 
     border-bottom: 1px solid var(--border);
 
@@ -160,9 +160,8 @@ button {
 }
 
 
-
 /* =========================================================
-   BRAND
+   LOGO
 ========================================================= */
 
 .brand {
@@ -170,20 +169,20 @@ button {
 
     flex-direction: column;
 
-    line-height: 1;
-
     width: fit-content;
+
+    line-height: 1;
 }
 
 
 .brand-main {
     font-family: var(--title-font);
 
-    font-size: 30px;
+    font-size: 31px;
 
-    font-weight: 700;
+    font-weight: 400;
 
-    letter-spacing: -1.5px;
+    letter-spacing: 1px;
 
     color: var(--red);
 }
@@ -192,15 +191,14 @@ button {
 .brand-sub {
     margin-top: 5px;
 
-    font-size: 8px;
+    font-size: 7px;
 
     font-weight: 800;
 
     letter-spacing: 3px;
 
-    color: var(--black);
+    color: var(--dark-grey);
 }
-
 
 
 /* =========================================================
@@ -210,7 +208,7 @@ button {
 .header-order {
     margin-left: auto;
 
-    padding: 12px 20px;
+    padding: 13px 21px;
 
     background: var(--red);
 
@@ -233,7 +231,6 @@ button {
 
     transform: translateY(-2px);
 }
-
 
 
 /* =========================================================
@@ -268,11 +265,9 @@ button {
 
     height: 2px;
 
-    background: var(--black);
+    background: var(--dark-grey);
 
-    transition:
-        width 0.2s ease,
-        transform 0.2s ease;
+    transition: width 0.2s ease;
 }
 
 
@@ -282,7 +277,7 @@ button {
 
 
 .menu-toggle span:nth-child(2) {
-    width: 21px;
+    width: 20px;
 }
 
 
@@ -296,7 +291,6 @@ button {
 }
 
 
-
 /* =========================================================
    SIDE MENU OVERLAY
 ========================================================= */
@@ -308,7 +302,12 @@ button {
 
     z-index: 1100;
 
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(
+        20,
+        20,
+        20,
+        0.65
+    );
 
     opacity: 0;
 
@@ -327,7 +326,6 @@ button {
 }
 
 
-
 /* =========================================================
    SIDE MENU
 ========================================================= */
@@ -341,18 +339,28 @@ button {
 
     z-index: 1200;
 
-    width: min(420px, 92vw);
+    width: min(
+        420px,
+        92vw
+    );
 
     height: 100vh;
 
     background: var(--white);
 
-    box-shadow: -20px 0 60px rgba(0, 0, 0, 0.12);
+    box-shadow:
+        -20px 0 60px rgba(
+            0,
+            0,
+            0,
+            0.2
+        );
 
     transform: translateX(100%);
 
     transition:
-        transform 0.35s cubic-bezier(
+        transform 0.35s
+        cubic-bezier(
             0.22,
             1,
             0.36,
@@ -392,9 +400,9 @@ button {
 
     background: white;
 
-    color: var(--black);
+    color: var(--dark-grey);
 
-    font-size: 30px;
+    font-size: 29px;
 
     line-height: 1;
 
@@ -407,11 +415,11 @@ button {
 
 
 .menu-close:hover {
-    background: var(--red);
+    background: var(--dark-grey);
+
+    border-color: var(--dark-grey);
 
     color: white;
-
-    border-color: var(--red);
 }
 
 
@@ -436,13 +444,15 @@ button {
 .side-link {
     display: block;
 
-    padding: 11px 0;
+    padding: 10px 0;
 
     font-family: var(--title-font);
 
     font-size: 22px;
 
-    border-bottom: 1px solid transparent;
+    font-weight: 400;
+
+    letter-spacing: 0.2px;
 
     transition:
         color 0.2s ease,
@@ -454,6 +464,11 @@ button {
     color: var(--red);
 
     padding-left: 7px;
+}
+
+
+.side-link.current-page {
+    color: var(--red);
 }
 
 
@@ -477,7 +492,7 @@ button {
 
     padding: 17px 20px;
 
-    background: var(--red);
+    background: var(--dark-grey);
 
     color: white;
 
@@ -487,19 +502,19 @@ button {
 
     letter-spacing: 1.5px;
 
-    transition: background 0.2s ease;
+    transition:
+        background 0.2s ease;
 }
 
 
 .side-deliveroo:hover {
-    background: var(--red-dark);
+    background: var(--red);
 }
 
 
 .side-deliveroo span {
     font-size: 17px;
 }
-
 
 
 /* =========================================================
@@ -519,9 +534,8 @@ button {
 }
 
 
-
 /* =========================================================
-   HERO
+   HOME HERO
 ========================================================= */
 
 .home-hero {
@@ -539,8 +553,8 @@ button {
         linear-gradient(
             110deg,
             #ffffff 0%,
-            #ffffff 55%,
-            #fff3f3 100%
+            #ffffff 60%,
+            #f5f5f5 100%
         );
 
     overflow: hidden;
@@ -560,7 +574,12 @@ button {
 
     height: 500px;
 
-    border: 1px solid rgba(201, 0, 0, 0.12);
+    border: 1px solid rgba(
+        201,
+        0,
+        0,
+        0.15
+    );
 
     border-radius: 50%;
 
@@ -580,7 +599,10 @@ button {
 
     margin-left: max(
         0px,
-        calc((100vw - var(--max-width)) / 2)
+        calc(
+            (100vw - var(--max-width))
+            / 2
+        )
     );
 }
 
@@ -591,16 +613,18 @@ button {
     font-family: var(--title-font);
 
     font-size: clamp(
-        55px,
-        8vw,
-        110px
+        60px,
+        9vw,
+        125px
     );
 
-    font-weight: 600;
+    font-weight: 400;
 
-    line-height: 0.95;
+    line-height: 0.9;
 
-    letter-spacing: -4px;
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
 }
 
 
@@ -618,7 +642,7 @@ button {
 
     color: var(--muted);
 
-    font-size: 16px;
+    font-size: 15px;
 
     line-height: 1.8;
 }
@@ -635,7 +659,6 @@ button {
 
     gap: 12px;
 }
-
 
 
 /* =========================================================
@@ -670,7 +693,7 @@ button {
 
 
 .primary-button:hover {
-    background: var(--red-dark);
+    background: var(--dark-grey);
 
     transform: translateY(-2px);
 }
@@ -690,11 +713,11 @@ button {
 
     padding: 16px 23px;
 
-    border: 1px solid var(--black);
+    border: 1px solid var(--dark-grey);
 
     background: transparent;
 
-    color: var(--black);
+    color: var(--dark-grey);
 
     font-size: 10px;
 
@@ -709,11 +732,10 @@ button {
 
 
 .secondary-button:hover {
-    background: var(--black);
+    background: var(--dark-grey);
 
     color: white;
 }
-
 
 
 /* =========================================================
@@ -727,7 +749,7 @@ button {
         linear-gradient(
             120deg,
             #ffffff,
-            #fff2f2
+            #f3f3f3
         );
 
     border-bottom: 1px solid var(--border);
@@ -750,14 +772,18 @@ button {
     font-family: var(--title-font);
 
     font-size: clamp(
-        55px,
+        60px,
         8vw,
-        95px
+        100px
     );
 
-    line-height: 0.96;
+    font-weight: 400;
 
-    letter-spacing: -4px;
+    line-height: 0.92;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
 }
 
 
@@ -779,7 +805,6 @@ button {
 
     line-height: 1.8;
 }
-
 
 
 /* =========================================================
@@ -804,8 +829,7 @@ button {
     display: grid;
 
     grid-template-columns:
-        1fr
-        1fr;
+        1fr 1fr;
 
     gap: 90px;
 
@@ -816,7 +840,7 @@ button {
 .about-image {
     min-height: 580px;
 
-    background: var(--off-white);
+    background: var(--dark-grey);
 
     border: 1px solid var(--border);
 
@@ -848,28 +872,27 @@ button {
 
     text-align: center;
 
-    color: var(--red);
+    background: var(--dark-grey);
 
-    background:
-        linear-gradient(
-            135deg,
-            #ffffff,
-            #f5f5f5
-        );
+    color: white;
 }
 
 
 .image-placeholder span {
     font-family: var(--title-font);
 
-    font-size: 65px;
+    font-size: 70px;
 
-    font-weight: 700;
+    font-weight: 400;
+
+    letter-spacing: 1px;
 }
 
 
 .image-placeholder p {
     margin-top: 10px;
+
+    color: #eeeeee;
 
     font-size: 10px;
 
@@ -882,7 +905,7 @@ button {
 .image-placeholder small {
     margin-top: 8px;
 
-    color: var(--grey);
+    color: #aaaaaa;
 
     font-size: 11px;
 }
@@ -896,14 +919,18 @@ button {
     font-family: var(--title-font);
 
     font-size: clamp(
-        42px,
+        48px,
         5vw,
-        68px
+        75px
     );
 
-    line-height: 1;
+    font-weight: 400;
 
-    letter-spacing: -2.5px;
+    line-height: 0.95;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
 }
 
 
@@ -932,7 +959,6 @@ button {
 }
 
 
-
 /* =========================================================
    REVIEWS
 ========================================================= */
@@ -940,7 +966,9 @@ button {
 .reviews-section {
     padding: 110px 60px;
 
-    background: var(--off-white);
+    background: var(--dark-grey);
+
+    color: white;
 }
 
 
@@ -967,14 +995,18 @@ button {
     font-family: var(--title-font);
 
     font-size: clamp(
-        40px,
+        48px,
         5vw,
-        65px
+        75px
     );
 
-    line-height: 1;
+    font-weight: 400;
 
-    letter-spacing: -2px;
+    line-height: 0.95;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
 }
 
 
@@ -1000,7 +1032,9 @@ button {
 
     background: white;
 
-    border: 1px solid var(--border);
+    color: var(--black);
+
+    border: 1px solid #444444;
 
     transition:
         transform 0.25s ease,
@@ -1016,7 +1050,7 @@ button {
             0,
             0,
             0,
-            0.08
+            0.25
         );
 }
 
@@ -1033,13 +1067,11 @@ button {
 .review-text {
     margin-top: 25px;
 
-    color: #444;
+    color: #444444;
 
-    font-family: var(--title-font);
+    font-size: 15px;
 
-    font-size: 19px;
-
-    line-height: 1.55;
+    line-height: 1.75;
 }
 
 
@@ -1097,9 +1129,8 @@ button {
 }
 
 
-
 /* =========================================================
-   LOCATION / GOOGLE MAPS
+   LOCATION / MAP
 ========================================================= */
 
 .location-section {
@@ -1132,14 +1163,18 @@ button {
     font-family: var(--title-font);
 
     font-size: clamp(
-        42px,
+        48px,
         5vw,
-        68px
+        75px
     );
 
-    line-height: 1;
+    font-weight: 400;
 
-    letter-spacing: -2.5px;
+    line-height: 0.95;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
 }
 
 
@@ -1194,9 +1229,11 @@ button {
 
     padding: 25px 30px;
 
-    background: var(--off-white);
+    background: var(--dark-grey);
 
-    border: 1px solid var(--border);
+    color: white;
+
+    border: 1px solid var(--dark-grey);
 
     border-top: 0;
 }
@@ -1207,7 +1244,7 @@ button {
 
     margin-bottom: 8px;
 
-    color: var(--red);
+    color: #bbbbbb;
 
     font-size: 9px;
 
@@ -1220,11 +1257,13 @@ button {
 .location-bottom strong {
     font-family: var(--title-font);
 
-    font-size: 17px;
+    font-size: 20px;
 
-    font-weight: 600;
+    font-weight: 400;
 
-    line-height: 1.5;
+    line-height: 1.4;
+
+    letter-spacing: 0.3px;
 }
 
 
@@ -1258,7 +1297,9 @@ button {
 
 
 .map-button:hover {
-    background: var(--red-dark);
+    background: white;
+
+    color: var(--dark-grey);
 
     transform: translateY(-2px);
 }
@@ -1267,15 +1308,14 @@ button {
 .map-button span {
     margin: 0;
 
-    color: white;
+    color: inherit;
 
     font-size: 14px;
 }
 
 
-
 /* =========================================================
-   PRODUCTS SECTION
+   PRODUCTS
 ========================================================= */
 
 .products-section {
@@ -1308,14 +1348,18 @@ button {
     font-family: var(--title-font);
 
     font-size: clamp(
-        42px,
+        48px,
         5vw,
-        68px
+        75px
     );
 
-    line-height: 1;
+    font-weight: 400;
 
-    letter-spacing: -2.5px;
+    line-height: 0.95;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
 }
 
 
@@ -1337,7 +1381,6 @@ button {
 
     line-height: 1.7;
 }
-
 
 
 /* =========================================================
@@ -1373,7 +1416,7 @@ button {
 
 
 .product-card:hover {
-    background: var(--red);
+    background: var(--dark-grey);
 
     color: white;
 
@@ -1399,30 +1442,28 @@ button {
     border-radius: 50%;
 
     font-size: 28px;
-
-    transition:
-        background 0.25s ease;
-}
-
-
-.product-card:hover .product-image {
-    background: white;
 }
 
 
 .product-card h3 {
     font-family: var(--title-font);
 
-    font-size: 30px;
+    font-size: 36px;
 
-    line-height: 1.1;
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
 }
 
 
 .product-card p {
     max-width: 500px;
 
-    margin-top: 10px;
+    margin-top: 12px;
 
     color: var(--muted);
 
@@ -1435,7 +1476,7 @@ button {
 
 
 .product-card:hover p {
-    color: #ffe5e5;
+    color: #cccccc;
 }
 
 
@@ -1451,15 +1492,12 @@ button {
     font-weight: 800;
 
     letter-spacing: 1.5px;
-
-    transition: color 0.25s ease;
 }
 
 
 .product-card:hover .product-card-button {
     color: white;
 }
-
 
 
 /* =========================================================
@@ -1505,7 +1543,7 @@ button {
 
 
 .main-category-card:hover {
-    background: var(--red);
+    background: var(--dark-grey);
 
     color: white;
 
@@ -1527,14 +1565,12 @@ button {
     font-weight: 800;
 
     letter-spacing: 2px;
-
-    transition: color 0.25s ease;
 }
 
 
 .main-category-card:hover
 .main-category-number {
-    color: #ffd5d5;
+    color: #bbbbbb;
 }
 
 
@@ -1548,16 +1584,22 @@ button {
 .main-category-card h3 {
     font-family: var(--title-font);
 
-    font-size: 32px;
+    font-size: 40px;
 
-    letter-spacing: -1px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
 }
 
 
 .main-category-card p {
     max-width: 400px;
 
-    margin-top: 8px;
+    margin-top: 10px;
 
     color: var(--muted);
 
@@ -1570,7 +1612,7 @@ button {
 
 
 .main-category-card:hover p {
-    color: #ffe8e8;
+    color: #cccccc;
 }
 
 
@@ -1586,8 +1628,6 @@ button {
     font-weight: 800;
 
     letter-spacing: 1.5px;
-
-    transition: color 0.25s ease;
 }
 
 
@@ -1595,7 +1635,6 @@ button {
 span:last-child {
     color: white;
 }
-
 
 
 /* =========================================================
@@ -1640,14 +1679,18 @@ span:last-child {
     font-family: var(--title-font);
 
     font-size: clamp(
-        38px,
+        48px,
         5vw,
-        65px
+        75px
     );
 
-    line-height: 1;
+    font-weight: 400;
 
-    letter-spacing: -2px;
+    line-height: 0.95;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
 }
 
 
@@ -1667,9 +1710,9 @@ span:last-child {
 
     padding: 18px 25px;
 
-    background: white;
+    background: var(--dark-grey);
 
-    color: var(--red);
+    color: white;
 
     font-size: 10px;
 
@@ -1686,9 +1729,9 @@ span:last-child {
 
 
 .deliveroo-button:hover {
-    background: var(--black);
+    background: white;
 
-    color: white;
+    color: var(--dark-grey);
 
     transform: translateY(-2px);
 }
@@ -1699,9 +1742,8 @@ span:last-child {
 }
 
 
-
 /* =========================================================
-   CONTACT PAGE
+   CONTACT
 ========================================================= */
 
 .contact-section {
@@ -1734,14 +1776,18 @@ span:last-child {
     font-family: var(--title-font);
 
     font-size: clamp(
-        42px,
+        48px,
         5vw,
-        68px
+        75px
     );
 
-    line-height: 1;
+    font-weight: 400;
 
-    letter-spacing: -2px;
+    line-height: 0.95;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
 }
 
 
@@ -1790,7 +1836,7 @@ span:last-child {
 
 
 .contact-card:hover {
-    background: var(--red);
+    background: var(--dark-grey);
 
     color: white;
 
@@ -1808,13 +1854,11 @@ span:last-child {
     font-weight: 800;
 
     letter-spacing: 2px;
-
-    transition: color 0.25s ease;
 }
 
 
 .contact-card:hover .contact-number {
-    color: #ffd5d5;
+    color: #bbbbbb;
 }
 
 
@@ -1828,13 +1872,11 @@ span:last-child {
     font-weight: 800;
 
     letter-spacing: 1.7px;
-
-    transition: color 0.25s ease;
 }
 
 
 .contact-card:hover .contact-label {
-    color: #ffd5d5;
+    color: #bbbbbb;
 }
 
 
@@ -1843,12 +1885,18 @@ span:last-child {
 
     font-family: var(--title-font);
 
-    font-size: 30px;
+    font-size: 38px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    text-transform: uppercase;
 }
 
 
 .contact-card > p:not(.contact-label) {
-    margin-top: 10px;
+    margin-top: 12px;
 
     color: var(--muted);
 
@@ -1861,7 +1909,7 @@ span:last-child {
 
 
 .contact-card:hover > p:not(.contact-label) {
-    color: #ffe5e5;
+    color: #cccccc;
 }
 
 
@@ -1877,15 +1925,12 @@ span:last-child {
     font-weight: 800;
 
     letter-spacing: 1.4px;
-
-    transition: color 0.25s ease;
 }
 
 
 .contact-card:hover .contact-link {
     color: white;
 }
-
 
 
 /* =========================================================
@@ -1920,12 +1965,7 @@ span:last-child {
 
     text-align: center;
 
-    background:
-        linear-gradient(
-            135deg,
-            #f3f3f3,
-            #e7e7e7
-        );
+    background: var(--off-white);
 
     border: 1px solid var(--border);
 }
@@ -1953,12 +1993,16 @@ span:last-child {
     font-family: var(--title-font);
 
     font-size: clamp(
-        40px,
+        48px,
         5vw,
-        65px
+        75px
     );
 
-    line-height: 1;
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    text-transform: uppercase;
 }
 
 
@@ -1981,88 +2025,12 @@ span:last-child {
 }
 
 
-
-/* =========================================================
-   AGE NOTICE
-========================================================= */
-
-.age-notice {
-    padding: 20px 60px;
-
-    background: #fff6f6;
-
-    border-bottom: 1px solid #f0d1d1;
-}
-
-
-.age-notice-inner {
-    width: min(
-        var(--max-width),
-        100%
-    );
-
-    margin: 0 auto;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
-}
-
-
-.age-number {
-    width: 50px;
-
-    height: 50px;
-
-    flex-shrink: 0;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background: var(--red);
-
-    color: white;
-
-    font-size: 12px;
-
-    font-weight: 800;
-}
-
-
-.age-notice strong {
-    display: block;
-
-    color: var(--red);
-
-    font-size: 10px;
-
-    letter-spacing: 1.5px;
-}
-
-
-.age-notice p {
-    margin-top: 2px;
-
-    color: var(--muted);
-
-    font-size: 11px;
-}
-
-
-
 /* =========================================================
    FOOTER
 ========================================================= */
 
 .site-footer {
-    background: var(--dark);
+    background: var(--dark-grey);
 
     color: white;
 
@@ -2081,17 +2049,14 @@ span:last-child {
     display: grid;
 
     grid-template-columns:
-        2fr
-        1fr
-        1fr
-        1fr;
+        2fr 1fr 1fr 1fr;
 
     gap: 50px;
 }
 
 
 .footer-brand .brand-main {
-    color: white;
+    color: var(--red);
 }
 
 
@@ -2156,7 +2121,7 @@ span:last-child {
 
     padding-top: 20px;
 
-    border-top: 1px solid #333333;
+    border-top: 1px solid #444444;
 
     display: flex;
 
@@ -2172,13 +2137,33 @@ span:last-child {
 }
 
 
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+.reveal.revealed {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
 
 /* =========================================================
-   MOBILE
+   TABLET
 ========================================================= */
 
 @media (max-width: 900px) {
-
 
     .header-inner {
         width: calc(100% - 40px);
@@ -2206,12 +2191,10 @@ span:last-child {
 
     .home-hero h1 {
         font-size: clamp(
-            50px,
+            55px,
             13vw,
-            80px
+            90px
         );
-
-        letter-spacing: -3px;
     }
 
 
@@ -2222,9 +2205,9 @@ span:last-child {
 
     .page-hero h1 {
         font-size: clamp(
-            50px,
+            55px,
             13vw,
-            80px
+            90px
         );
     }
 
@@ -2334,21 +2317,14 @@ span:last-child {
         flex-direction: column;
     }
 
-
-    .age-notice {
-        padding: 18px 30px;
-    }
-
 }
 
 
-
 /* =========================================================
-   SMALL MOBILE
+   MOBILE
 ========================================================= */
 
 @media (max-width: 520px) {
-
 
     .header-inner {
         width: calc(100% - 30px);
@@ -2356,12 +2332,12 @@ span:last-child {
 
 
     .brand-main {
-        font-size: 26px;
+        font-size: 27px;
     }
 
 
     .brand-sub {
-        font-size: 7px;
+        font-size: 6.5px;
 
         letter-spacing: 2.5px;
     }
@@ -2373,9 +2349,7 @@ span:last-child {
 
 
     .home-hero h1 {
-        font-size: 50px;
-
-        letter-spacing: -2.5px;
+        font-size: 58px;
     }
 
 
@@ -2403,9 +2377,7 @@ span:last-child {
 
 
     .page-hero h1 {
-        font-size: 50px;
-
-        letter-spacing: -2.5px;
+        font-size: 58px;
     }
 
 
@@ -2426,7 +2398,7 @@ span:last-child {
 
 
     .image-placeholder span {
-        font-size: 50px;
+        font-size: 55px;
     }
 
 
@@ -2492,41 +2464,4 @@ span:last-child {
         padding: 55px 20px 25px;
     }
 
-
-    .age-notice {
-        padding: 16px 20px;
-    }
-
-
-    .age-notice-inner {
-        align-items: flex-start;
-    }
-
-}
-/* =========================================================
-   SCROLL REVEAL
-========================================================= */
-
-.reveal {
-    opacity: 0;
-
-    transform: translateY(25px);
-
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
-}
-
-
-.reveal.revealed {
-    opacity: 1;
-
-    transform: translateY(0);
-}
-
-
-.current-page {
-    color: var(--red) !important;
-
-    padding-left: 7px !important;
 }
